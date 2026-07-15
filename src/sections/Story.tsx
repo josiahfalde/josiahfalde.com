@@ -58,14 +58,14 @@ export default function Story() {
 
         <Reveal delay={200} className="lg:sticky lg:top-24 lg:self-start">
           <PhotoSlot
-            src="./photos/haiti.jpg"
-            alt="Southern Haiti, near the hospital Josiah's family helped rebuild"
+            src="./photos/clinic.jpg"
+            alt="Josiah speaking into a microphone at an outdoor gathering under a tarp-roofed shelter"
             label="Southern Haiti"
             className="aspect-[4/5] w-full"
           />
           <p className="mt-3 text-sm text-ink-faint">
-            Southern Haiti — home base for the hospital rebuild, the OR, and
-            the mobile clinics.
+            Speaking at an outdoor gathering — the ministry work that sits
+            underneath the hospital, the OR, and the clinics.
           </p>
         </Reveal>
       </div>

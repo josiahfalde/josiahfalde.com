@@ -25,7 +25,7 @@ public/
   photos/               drop-in photo slots — see photos/README.md for filenames
 src/
   index.css             design tokens (CSS vars) + base styles
-  App.tsx               section order: Hero → Story → Clinical → Engineering → Projects → Contact
+  App.tsx               section order: Hero → Story → Clinical → Engineering → Projects → Hobbies → Contact
   components/           Nav (scroll-spy), ThemeToggle, Section, Reveal, PhotoSlot
   sections/             one file per page section; content lives inline in these
 ```

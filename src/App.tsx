@@ -4,6 +4,7 @@ import Story from "./sections/Story";
 import Clinical from "./sections/Clinical";
 import Engineering from "./sections/Engineering";
 import Projects from "./sections/Projects";
+import Hobbies from "./sections/Hobbies";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
@@ -23,6 +24,7 @@ export default function App() {
         <Clinical />
         <Engineering />
         <Projects />
+        <Hobbies />
         <Contact />
       </main>
       <Footer />

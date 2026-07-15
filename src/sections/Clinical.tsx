@@ -56,7 +56,7 @@ export default function Clinical() {
         <Reveal delay={100}>
           <article className="flex h-full flex-col overflow-hidden rounded-xl border border-line bg-paper">
             <PhotoSlot
-              src="./photos/clinic.jpg"
+              src="./photos/translator.jpg"
               alt="Mobile medical clinic in rural Haiti"
               label="Mobile clinic"
               className="aspect-[16/9] rounded-none border-0 border-b border-line"

@@ -1,5 +1,6 @@
 import Section from "../components/Section";
 import Reveal from "../components/Reveal";
+import PhotoSlot from "../components/PhotoSlot";
 
 const SKILLS = [
   "SolidWorks",
@@ -47,6 +48,25 @@ export default function Engineering() {
                 </p>
               </div>
             </div>
+            <div className="mt-6 grid grid-cols-[5fr_3fr] gap-3 sm:gap-4">
+              <PhotoSlot
+                src="./photos/capstone-team.jpg"
+                alt="The eight-person capstone team, Section GR-8, in suits holding first-place certificates"
+                label="Section GR-8"
+                className="aspect-[4/3]"
+              />
+              <PhotoSlot
+                src="./photos/capstone-presenting.jpg"
+                alt="Josiah presenting the capstone project's financial and power budget allocations"
+                label="Defense"
+                imgClassName="object-[center_40%]"
+                className="h-full"
+              />
+            </div>
+            <p className="mt-3 text-sm text-ink-faint">
+              Section GR-8 with the first-place result — and the final
+              presentation of the off-grid home&rsquo;s budget allocations.
+            </p>
           </article>
         </Reveal>
 

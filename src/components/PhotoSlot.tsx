@@ -10,6 +10,8 @@ interface PhotoSlotProps {
   monogram?: boolean;
   /** Aspect/size classes, e.g. "aspect-[4/5]" */
   className?: string;
+  /** Extra classes for the <img>, e.g. "object-bottom" to bias the crop. */
+  imgClassName?: string;
 }
 
 /**
@@ -24,6 +26,7 @@ export default function PhotoSlot({
   label,
   monogram = false,
   className = "",
+  imgClassName = "",
 }: PhotoSlotProps) {
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -39,7 +42,7 @@ export default function PhotoSlot({
           loading="lazy"
           onLoad={() => setLoaded(true)}
           onError={() => setFailed(true)}
-          className={`absolute inset-0 h-full w-full object-cover ${loaded ? "opacity-100" : "opacity-0"}`}
+          className={`absolute inset-0 h-full w-full object-cover ${imgClassName} ${loaded ? "opacity-100" : "opacity-0"}`}
         />
       )}
       {!loaded && (

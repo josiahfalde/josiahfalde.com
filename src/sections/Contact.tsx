@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="05 · Contact"
+      eyebrow="06 · Contact"
       title="Get in touch"
       lead="Whether it’s medicine, engineering, or the places they overlap — I’d be glad to hear from you."
     >

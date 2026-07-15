@@ -6,6 +6,7 @@ const LINKS = [
   { id: "clinical", label: "Clinical" },
   { id: "engineering", label: "Engineering" },
   { id: "projects", label: "Projects" },
+  { id: "hobbies", label: "Hobbies" },
   { id: "contact", label: "Contact" },
 ];
 
