@@ -65,7 +65,14 @@ export default function Story() {
           />
           <p className="mt-3 text-sm text-ink-faint">
             Preaching at a church plant during a medical clinic in the
-            Dominican Republic.
+            Dominican Republic — work that continues with{" "}
+            <a
+              href="https://parakaleo.com"
+              className="font-medium text-copper-deep hover:underline"
+            >
+              Parakaleo International
+            </a>
+            , my family&rsquo;s missions organization.
           </p>
         </Reveal>
       </div>

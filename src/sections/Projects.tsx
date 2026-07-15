@@ -35,6 +35,16 @@ export default function Projects() {
               medical history for the first time, so care can build from one
               visit to the next.
             </p>
+            <p className="mt-3 leading-relaxed text-ink-soft">
+              The name comes from{" "}
+              <a
+                href="https://parakaleo.com"
+                className="font-medium text-copper-deep hover:underline"
+              >
+                Parakaleo International
+              </a>
+              , my family&rsquo;s missions organization behind the clinics.
+            </p>
             <ul className="mt-5 flex flex-wrap gap-2">
               {["Offline-first", "iPad + Raspberry Pi", "Local server", "Field-deployed"].map(
                 (tag) => (
