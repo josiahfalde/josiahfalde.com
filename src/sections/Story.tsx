@@ -14,9 +14,9 @@ const CHAPTERS = [
     body: "My family’s ministry helped rebuild a hospital near our home. Out of curiosity I asked the general surgeon if I could watch a procedure; instead, he handed me a gown and told me to scrub in. One case became a summer: forty-plus surgeries as first assist — retracting for hernia repairs, assisting lipoma removals, a laparotomy with bowel resection — in an operating room that made do with what it had. That summer reframed the conviction: showing up isn’t enough. I wanted the skill to be genuinely useful.",
   },
   {
-    year: "2023–2025",
+    year: "Since 2018",
     title: "The clinics",
-    body: "Across three summers I translated in more than fifteen rural mobile clinics in Haiti and the Dominican Republic, sitting between patients and the physicians, PAs, and NPs treating them. From that seat you notice the system problems: paper charts that vanish between visits, patients with no medical history at all. So I treated it like an engineering problem — and with my sister, a nurse, and my brother, a cybersecurity specialist, built ParakaleoMMC, an offline charting system those clinics now use.",
+    body: "I’ve been translating in rural mobile clinics in Haiti and the Dominican Republic since 2018, sitting between patients and the physicians, PAs, and NPs treating them. From that seat you notice a system problem: paper charts don’t follow patients, so every visit starts from zero. With my sister, a nurse, and my brother, a cybersecurity specialist, I built ParakaleoMMC — an offline charting system our mobile clinics carry with them, so patients finally have a medical history that follows them from one visit to the next.",
   },
   {
     year: "Now",
@@ -59,13 +59,13 @@ export default function Story() {
         <Reveal delay={200} className="lg:sticky lg:top-24 lg:self-start">
           <PhotoSlot
             src="./photos/clinic.jpg"
-            alt="Josiah speaking into a microphone at an outdoor gathering under a tarp-roofed shelter"
-            label="Southern Haiti"
+            alt="Josiah preaching at a church plant during a medical clinic in the Dominican Republic"
+            label="Dominican Republic"
             className="aspect-[4/5] w-full"
           />
           <p className="mt-3 text-sm text-ink-faint">
-            Speaking at an outdoor gathering — the ministry work that sits
-            underneath the hospital, the OR, and the clinics.
+            Preaching at a church plant during a medical clinic in the
+            Dominican Republic.
           </p>
         </Reveal>
       </div>

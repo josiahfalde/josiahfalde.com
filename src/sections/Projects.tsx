@@ -16,7 +16,7 @@ export default function Projects() {
         <article className="overflow-hidden rounded-xl border border-line bg-paper lg:grid lg:grid-cols-[1.2fr_1fr]">
           <div className="p-6 sm:p-8 lg:p-10">
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-copper-deep">
-              Flagship · In use in rural Haiti
+              Flagship · In use in our mobile clinics
             </p>
             <h3 className="mt-2 font-serif text-3xl tracking-tight">
               ParakaleoMMC
@@ -28,10 +28,12 @@ export default function Projects() {
               and my brother, a cybersecurity specialist.
             </p>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              It exists because I spent three summers translating in those
-              clinics and watched paper charting slow care to a crawl. Today
-              it runs in clinics in rural Haiti — giving patients there a
-              documented medical history for the first time.
+              It exists because I&rsquo;ve translated in those clinics since
+              2018 and saw patients arrive with no record of their own
+              history. It travels with the mobile clinics we bring to rural
+              Haiti and the Dominican Republic — giving patients a lasting
+              medical history for the first time, so care can build from one
+              visit to the next.
             </p>
             <ul className="mt-5 flex flex-wrap gap-2">
               {["Offline-first", "iPad + Raspberry Pi", "Local server", "Field-deployed"].map(
@@ -95,8 +97,8 @@ export default function Projects() {
           <article className="flex h-full flex-col overflow-hidden rounded-xl border border-line bg-paper">
             <PhotoSlot
               src="./photos/prints.jpg"
-              alt="3D-printed equipment parts for the Haiti hospital"
-              label="3D prints"
+              alt="3D-printed scale model of the hospital being built in the mountains of Haiti"
+              label="Scale model"
               className="aspect-[16/9] rounded-none border-0 border-b border-line"
             />
             <div className="flex flex-1 flex-col p-6 sm:p-7">
@@ -104,12 +106,11 @@ export default function Projects() {
                 Summer 2025 · Haiti
               </p>
               <h3 className="mt-2 font-serif text-2xl tracking-tight">
-                Hospital 3D prints
+                Hospital scale models
               </h3>
               <p className="mt-3 leading-relaxed text-ink-soft">
-                Small-scale printed equipment and replacement parts for the
-                hospital — when the supply chain is an ocean away, you print
-                what you need.
+                Modeled the hospital being built in the mountains of Haiti in
+                SolidWorks, then 3D-printed miniature scale replicas of it.
               </p>
             </div>
           </article>
@@ -124,10 +125,9 @@ export default function Projects() {
               Medical supply drones
             </h3>
             <p className="mt-3 flex-1 leading-relaxed text-ink-soft">
-              The next problem worth solving: drone delivery of medical
-              supplies to rural Haiti, where the last miles of road are often
-              the hardest part of care. Engineering degree in hand, medical
-              training next — this is where the two converge.
+              A future goal: drone delivery of medical supplies to rural
+              Haiti, where reaching patients is often the hardest part of
+              care.
             </p>
             <span className="mt-4 inline-flex w-fit items-center rounded-full border border-copper/50 px-3 py-1 font-mono text-xs uppercase tracking-widest text-copper-deep">
               On the drawing board

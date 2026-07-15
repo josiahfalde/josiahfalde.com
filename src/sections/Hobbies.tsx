@@ -11,22 +11,21 @@ export default function Hobbies() {
       id="hobbies"
       eyebrow="05 · Hobbies"
       title="Off the clock"
-      lead="Away from the clinics and the CAD files, two habits stick: a camera and a piano."
+      lead="Photography and piano."
     >
       <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
         <div className="space-y-8 lg:sticky lg:top-24 lg:self-start">
           <Reveal>
             <h3 className="font-serif text-2xl tracking-tight">Photography</h3>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              A camera comes along almost everywhere I go. Six favorite frames
-              live here, and they rotate as new ones earn the spot.
+              I take a camera nearly everywhere I go. These are six of my
+              favorite shots.
             </p>
           </Reveal>
           <Reveal delay={100}>
             <h3 className="font-serif text-2xl tracking-tight">Piano</h3>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              The other standing habit — sitting down at the piano and
-              recording the pieces I keep coming back to.
+              I also play piano and enjoy recording the pieces I learn.
             </p>
           </Reveal>
         </div>

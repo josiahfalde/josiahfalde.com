@@ -30,10 +30,11 @@ export default function Hero() {
             <p className="mt-7 max-w-xl leading-relaxed text-ink-soft">
               I’m a mechanical engineering graduate, EMT, and aspiring
               osteopathic physician. I’ve first-assisted in a rural Haitian
-              operating room, translated in mobile clinics across Haiti and
-              the Dominican Republic, and built the charting software those
-              clinics now run on. Currently in a gap year — studying for the
-              MCAT and preparing to apply to osteopathic medical schools.
+              operating room, translated in mobile medical clinics across
+              Haiti and the Dominican Republic since 2018, and built the
+              offline charting software our clinics carry so patients keep a
+              lasting medical record. Currently in a gap year — studying for
+              the MCAT and preparing to apply to osteopathic medical schools.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a

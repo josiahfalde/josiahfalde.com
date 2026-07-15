@@ -17,7 +17,7 @@ export default function Engineering() {
       id="engineering"
       eyebrow="03 · Engineering"
       title="Trained to think in systems"
-      lead="An ABET-accredited mechanical engineering degree — and the habit of treating every problem, clinical ones included, as a system to understand and improve."
+      lead="A B.S. in Mechanical Engineering, and the projects that put it to work."
     >
       <div className="grid gap-6 lg:grid-cols-3">
         <Reveal className="lg:col-span-2">
