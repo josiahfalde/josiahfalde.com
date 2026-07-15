@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josiah Falde — Engineer heading into medicine</title>
+    <meta
+      name="description"
+      content="Josiah Falde is a mechanical engineering graduate, EMT, and aspiring osteopathic physician with hands-on surgical and clinic experience in Haiti and the Dominican Republic. Engineering gave me the foundation; medicine gives it a purpose."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="canonical" href="https://josiahfalde.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://josiahfalde.com/" />
+    <meta property="og:title" content="Josiah Falde — Engineer heading into medicine" />
+    <meta
+      property="og:description"
+      content="Mechanical engineering graduate, EMT, and aspiring osteopathic physician. Surgical first assist and medical translator in Haiti and the Dominican Republic; builder of ParakaleoMMC, an offline-first clinic charting system."
+    />
+    <meta property="og:image" content="https://josiahfalde.com/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      // Set theme before first paint to avoid a flash.
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark =
+            stored === "dark" ||
+            (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

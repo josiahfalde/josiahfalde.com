@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+   Design tokens — RGB triplets so Tailwind opacity modifiers work.
+   Palette: warm paper + ink, blueprint navy (engineering), copper (the human,
+   hands-on warmth). No literal medical iconography.
+--------------------------------------------------------------------------- */
+:root {
+  --c-paper: 250 248 244; /* #FAF8F4 warm paper       */
+  --c-raised: 255 255 255; /* #FFFFFF cards            */
+  --c-ink: 35 42 53; /* #232A35 primary text     */
+  --c-ink-soft: 76 86 101; /* #4C5665 secondary text   */
+  --c-ink-faint: 95 106 119; /* #5F6A77 labels, captions */
+  --c-line: 229 223 211; /* #E5DFD3 hairlines        */
+  --c-copper: 192 118 77; /* #C0764D decorative       */
+  --c-copper-deep: 154 79 43; /* #9A4F2B text-safe accent */
+  --c-navy: 29 58 87; /* #1D3A57 headings/accents */
+  color-scheme: light;
+}
+
+.dark {
+  --c-paper: 17 22 29; /* #11161D */
+  --c-raised: 26 33 43; /* #1A212B */
+  --c-ink: 233 229 220; /* #E9E5DC */
+  --c-ink-soft: 178 179 175; /* #B2B3AF */
+  --c-ink-faint: 145 146 143; /* #91928F */
+  --c-line: 43 51 63; /* #2B333F */
+  --c-copper: 199 123 82; /* #C77B52 */
+  --c-copper-deep: 214 148 103; /* #D69467 text-safe accent */
+  --c-navy: 143 176 205; /* #8FB0CD steel blue        */
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  @apply bg-paper font-sans text-ink antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgb(var(--c-copper) / 0.3);
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--c-copper-deep));
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Scroll-reveal: fades/slides in when the Reveal component marks it visible.
+   Fully disabled under prefers-reduced-motion. */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Hide scrollbar on the mobile nav strip without hiding scrollability */
+.nav-scroll {
+  scrollbar-width: none;
+}
+.nav-scroll::-webkit-scrollbar {
+  display: none;
+}
