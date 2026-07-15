@@ -2,8 +2,16 @@ import Section from "../components/Section";
 import Reveal from "../components/Reveal";
 import PhotoSlot from "../components/PhotoSlot";
 
-/** Drop-in contract: public/photos/photography/01.jpg … 06.jpg */
-const FRAMES = ["01", "02", "03", "04", "05", "06"];
+/** Drop-in contract: public/photos/photography/01.jpg … 06.jpg.
+ *  01 is the featured shot — it spans a 2×2 block in the grid. */
+const FRAMES = [
+  { n: "01", featured: true, alt: "Sunrise over the Haitian coast — a boat cutting toward cliffs" },
+  { n: "02", alt: "Overlook above a canyon" },
+  { n: "03", alt: "Aerial of a fishing pier at sunrise, Pensacola Beach" },
+  { n: "04", alt: "Weathered piano keys in low light" },
+  { n: "05", alt: "Golden-hour portrait through a window" },
+  { n: "06", alt: "Coastal homes on a cliff at dusk" },
+];
 
 export default function Hobbies() {
   return (
@@ -41,13 +49,13 @@ export default function Hobbies() {
 
         <Reveal delay={150}>
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-            {FRAMES.map((n) => (
-              <li key={n}>
+            {FRAMES.map((f) => (
+              <li key={f.n} className={f.featured ? "col-span-2 row-span-2" : ""}>
                 <PhotoSlot
-                  src={`./photos/photography/${n}.jpg`}
-                  alt={`Photography by Josiah Falde — frame ${n} of 6`}
-                  label={`${n} / 06`}
-                  className="aspect-square"
+                  src={`./photos/photography/${f.n}.jpg`}
+                  alt={f.alt}
+                  label={`${f.n} / 06`}
+                  className={f.featured ? "aspect-square sm:aspect-auto sm:h-full" : "aspect-square"}
                 />
               </li>
             ))}
