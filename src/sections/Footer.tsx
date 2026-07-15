@@ -5,8 +5,8 @@ export default function Footer() {
         <p className="text-sm text-ink-faint">
           © {new Date().getFullYear()} Josiah Falde
         </p>
-        <p className="font-serif text-sm italic text-ink-faint">
-          Step into suffering, and be useful in it.
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">
+          Pensacola, FL · Haiti · Dominican Republic
         </p>
       </div>
     </footer>
