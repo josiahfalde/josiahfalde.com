@@ -57,7 +57,6 @@ export default function Hero() {
               src="./photos/headshot.jpg"
               alt="Portrait of Josiah Falde"
               monogram
-              label="18.54° N · 72.31° W"
               className="aspect-[4/5]"
             />
           </Reveal>
