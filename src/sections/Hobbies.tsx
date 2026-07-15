@@ -11,7 +11,7 @@ export default function Hobbies() {
       id="hobbies"
       eyebrow="05 · Hobbies"
       title="Off the clock"
-      lead="Two constants outside the work: photography and piano."
+      lead="Three constants outside the work: photography, piano, and espresso."
     >
       <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
         <div className="space-y-8 lg:sticky lg:top-24 lg:self-start">
@@ -26,8 +26,15 @@ export default function Hobbies() {
           <Reveal delay={100}>
             <h3 className="font-serif text-2xl tracking-tight">Piano</h3>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              The slower of the two. I learn pieces I love and record them
+              The slowest of the three. I learn pieces I love and record them
               once they&rsquo;re ready.
+            </p>
+          </Reveal>
+          <Reveal delay={150}>
+            <h3 className="font-serif text-2xl tracking-tight">Espresso</h3>
+            <p className="mt-3 leading-relaxed text-ink-soft">
+              Making espresso — dialing in grind, dose, and time until the
+              shot pulls right.
             </p>
           </Reveal>
         </div>
