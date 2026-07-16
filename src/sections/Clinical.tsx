@@ -17,8 +17,9 @@ export default function Clinical() {
           <article className="flex h-full flex-col overflow-hidden rounded-xl border border-line bg-paper">
             <PhotoSlot
               src="./photos/surgical.jpg"
-              alt="Operating room at Emmanuel Medical Center, Haiti"
+              alt="Josiah in scrubs assisting during a procedure at Emmanuel Medical Center, Haiti"
               label="Emmanuel Medical Center"
+              imgClassName="object-[center_22%]"
               className="aspect-[16/9] rounded-none border-0 border-b border-line"
             />
             <div className="flex flex-1 flex-col p-6 sm:p-7">
