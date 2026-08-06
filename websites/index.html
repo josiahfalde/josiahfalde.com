@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Design &amp; Hosting — Josiah Falde</title>
+  <meta name="description" content="Custom websites for small businesses: free mockup, flat-fee build, and monthly hosting and maintenance." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --paper: #FAF8F4; --raised: #FFFFFF; --ink: #232A35; --ink-soft: #4C5665;
+      --ink-faint: #5F6A77; --line: #E5DFD3; --copper: #C0764D;
+      --copper-deep: #9A4F2B; --navy: #1D3A57;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #11161D; --raised: #1A212B; --ink: #E9E5DC; --ink-soft: #B2B3AF;
+        --ink-faint: #91928F; --line: #2B333F; --copper: #C77B52;
+        --copper-deep: #D69467; --navy: #8FB0CD;
+        color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      background: var(--paper); color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.25rem 3rem; }
+    .eyebrow {
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--copper-deep); margin-bottom: 0.75rem;
+    }
+    h1, h2 {
+      font-family: "Iowan Old Style", Palatino, Georgia, serif;
+      color: var(--navy); line-height: 1.2; font-weight: 600;
+    }
+    h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); margin-bottom: 1rem; }
+    h2 { font-size: 1.25rem; margin: 2.5rem 0 0.75rem; }
+    p { color: var(--ink-soft); margin-bottom: 0.9rem; }
+    .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin-top: 1rem; }
+    .card {
+      background: var(--raised); border: 1px solid var(--line);
+      border-radius: 0.5rem; padding: 1.25rem;
+    }
+    .card h3 { font-size: 1rem; color: var(--ink); margin-bottom: 0.25rem; }
+    .price {
+      font-family: "Iowan Old Style", Palatino, Georgia, serif;
+      font-size: 1.5rem; color: var(--copper-deep); margin-bottom: 0.5rem; display: block;
+    }
+    .card p { font-size: 0.9rem; margin: 0; }
+    ol { padding-left: 1.25rem; color: var(--ink-soft); }
+    ol li { margin-bottom: 0.5rem; }
+    a { color: var(--copper-deep); }
+    .contact {
+      margin-top: 2.5rem; padding: 1.25rem; background: var(--raised);
+      border: 1px solid var(--line); border-radius: 0.5rem;
+    }
+    footer {
+      max-width: 44rem; margin: 0 auto; padding: 1.5rem 1.25rem 2.5rem;
+      border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--ink-faint);
+    }
+    footer a { color: var(--ink-faint); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Web Services</p>
+    <h1>Website design &amp; hosting for small businesses</h1>
+    <p>
+      I design, build, and host websites for small businesses — primarily
+      home-service companies like plumbers, HVAC contractors, electricians,
+      landscapers, and roofers that need a clean, professional web presence
+      that brings in calls.
+    </p>
+
+    <h2>How it works</h2>
+    <ol>
+      <li><strong>Free mockup.</strong> I build a design preview of your site first, at no cost — you see exactly what you'd be paying for before any money changes hands.</li>
+      <li><strong>Build.</strong> If you like it, I build and launch the full site for a one-time flat fee.</li>
+      <li><strong>Hosting &amp; maintenance.</strong> A flat monthly fee keeps the site online, secure, and up to date — content changes included.</li>
+    </ol>
+
+    <h2>Pricing</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Standard build</h3>
+        <span class="price">$500</span>
+        <p>A focused single-page or small site: your services, service area, reviews, photos, and a clear way for customers to call or request a quote.</p>
+      </div>
+      <div class="card">
+        <h3>Premium build</h3>
+        <span class="price">$1,000</span>
+        <p>A larger site with additional pages and features — per-service pages, photo galleries, quote request forms, and anything else your business needs.</p>
+      </div>
+    </div>
+
+    <h2>Billing &amp; terms</h2>
+    <p>
+      Builds are billed as a one-time flat fee. Hosting and maintenance is
+      billed monthly and can be canceled anytime. Payment is by card through
+      Stripe's secure checkout. Questions about billing or refunds:
+      email me directly.
+    </p>
+
+    <div class="contact">
+      <h2 style="margin-top:0">Get a free mockup</h2>
+      <p style="margin-bottom:0">
+        Email <a href="mailto:josiahfalde@proton.me">josiahfalde@proton.me</a>
+        with your business name and what you do, and I'll send back a design
+        preview of your new site.
+      </p>
+    </div>
+  </main>
+  <footer>
+    <a href="/">josiahfalde.com</a> · Josiah Falde
+  </footer>
+</body>
+</html>
