@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sites | Josiah Falde</title>
+  <meta name="description" content="Everything Josiah Falde runs online, in one place." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --paper: #FAF8F4; --raised: #FFFFFF; --ink: #232A35; --ink-soft: #4C5665;
+      --ink-faint: #5F6A77; --line: #E5DFD3; --copper: #C0764D;
+      --copper-deep: #9A4F2B; --navy: #1D3A57;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #11161D; --raised: #1A212B; --ink: #E9E5DC; --ink-soft: #B2B3AF;
+        --ink-faint: #91928F; --line: #2B333F; --copper: #C77B52;
+        --copper-deep: #D69467; --navy: #8FB0CD;
+        color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      background: var(--paper); color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 40rem; margin: 0 auto; padding: 4.5rem 1.25rem 3rem; }
+    h1 {
+      font-family: "Iowan Old Style", Palatino, Georgia, serif;
+      color: var(--navy); line-height: 1.2; font-weight: 600;
+      font-size: clamp(1.75rem, 5vw, 2.25rem); margin-bottom: 0.5rem;
+    }
+    .lead { color: var(--ink-soft); margin-bottom: 2.25rem; }
+    ul { list-style: none; padding: 0; }
+    li + li { border-top: 1px solid var(--line); }
+    li a {
+      display: grid; grid-template-columns: 1fr auto; gap: 0.25rem 1.5rem;
+      align-items: baseline; padding: 1.1rem 0; text-decoration: none; color: inherit;
+    }
+    li a:hover .name, li a:focus-visible .name { color: var(--copper-deep); }
+    li a:focus-visible { outline: 2px solid var(--copper); outline-offset: 4px; border-radius: 4px; }
+    .name {
+      font-family: "Iowan Old Style", Palatino, Georgia, serif;
+      font-size: 1.25rem; color: var(--navy); transition: color 120ms;
+    }
+    .host {
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.8rem; color: var(--ink-faint); text-align: right;
+    }
+    .what { grid-column: 1 / -1; color: var(--ink-soft); font-size: 0.95rem; }
+    footer {
+      max-width: 40rem; margin: 0 auto; padding: 0 1.25rem 3rem;
+      font-size: 0.85rem; color: var(--ink-faint);
+    }
+    footer div { border-top: 1px solid var(--line); padding-top: 1.5rem; }
+    footer a { color: var(--ink-faint); }
+    @media (max-width: 480px) {
+      li a { grid-template-columns: 1fr; }
+      .host { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Sites</h1>
+    <p class="lead">Everything I run online, in one place.</p>
+    <ul>
+      <li>
+        <a href="https://flywheel.josiahfalde.com/">
+          <span class="name">Flywheel</span>
+          <span class="host">flywheel.josiahfalde.com</span>
+          <span class="what">Options premium analytics for the Wheel strategy. Import broker history, see momentum, yield, wheels, and allocation.</span>
+        </a>
+      </li>
+      <li>
+        <a href="/websites/">
+          <span class="name">Websites</span>
+          <span class="host">josiahfalde.com/websites</span>
+          <span class="what">Website design and hosting for small businesses.</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://fuel75.vercel.app/">
+          <span class="name">Macro Tracker</span>
+          <span class="host">fuel75.vercel.app</span>
+          <span class="what">Phone-first macro tracker with barcode and label scanning. Works offline.</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://vaultfall.vercel.app/">
+          <span class="name">Vaultfall</span>
+          <span class="host">vaultfall.vercel.app</span>
+          <span class="what">Four-player co-op browser shooter with proximity voice.</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <div><a href="/">josiahfalde.com</a></div>
+  </footer>
+</body>
+</html>
