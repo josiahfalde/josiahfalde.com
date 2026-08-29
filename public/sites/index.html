@@ -37,7 +37,7 @@
     .lead { color: var(--ink-soft); margin-bottom: 2.25rem; }
     ul { list-style: none; padding: 0; }
     li + li { border-top: 1px solid var(--line); }
-    li a {
+    li a, li .row {
       display: grid; grid-template-columns: 1fr auto; gap: 0.25rem 1.5rem;
       align-items: baseline; padding: 1.1rem 0; text-decoration: none; color: inherit;
     }
@@ -91,11 +91,25 @@
         </a>
       </li>
       <li>
+        <a href="https://farescout-app.vercel.app/">
+          <span class="name">FareScout</span>
+          <span class="host">farescout-app.vercel.app</span>
+          <span class="what">Flight-deal scanner for East Coast to Europe and Asia. Cash fares rescanned twice a day, priced against Chase transfer partners.</span>
+        </a>
+      </li>
+      <li>
         <a href="https://vaultfall.vercel.app/">
           <span class="name">Vaultfall</span>
           <span class="host">vaultfall.vercel.app</span>
           <span class="what">Four-player co-op browser shooter with proximity voice.</span>
         </a>
+      </li>
+      <li>
+        <div class="row">
+          <span class="name">ParakaleoMMC</span>
+          <span class="host">clinic network only</span>
+          <span class="what">Offline-first medical charting for mobile clinics. Runs on a Raspberry Pi in the field, not on the public internet.</span>
+        </div>
       </li>
     </ul>
   </main>
