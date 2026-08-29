@@ -3,7 +3,7 @@ import Reveal from "../components/Reveal";
 import PhotoSlot from "../components/PhotoSlot";
 
 /** Drop-in contract: public/photos/photography/01.jpg … 06.jpg.
- *  01 is the featured shot — it spans a 2×2 block in the grid. */
+ *  01 is the featured shot; it spans a 2×2 block in the grid. */
 const FRAMES: {
   n: string;
   alt: string;
@@ -11,7 +11,7 @@ const FRAMES: {
   /** object-position override to keep the shot's composition centered */
   pos?: string;
 }[] = [
-  { n: "01", featured: true, alt: "Sunrise over the Haitian coast — a boat cutting toward cliffs", pos: "object-[10%_center]" },
+  { n: "01", featured: true, alt: "Sunrise over the Haitian coast, a boat cutting toward cliffs", pos: "object-[10%_center]" },
   { n: "02", alt: "Overlook above a canyon" },
   { n: "03", alt: "Aerial of a fishing pier at sunrise, Pensacola Beach", pos: "object-[15%_center]" },
   { n: "04", alt: "Weathered piano keys in low light" },
@@ -32,7 +32,7 @@ export default function Hobbies() {
           <Reveal>
             <h3 className="font-serif text-2xl tracking-tight">Photography</h3>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              A camera comes along on most of these trips — and everywhere
+              A camera comes along on most of these trips, and everywhere
               else. These six are current favorites; they&rsquo;ll change as
               better shots replace them.
             </p>
@@ -47,7 +47,7 @@ export default function Hobbies() {
           <Reveal delay={150}>
             <h3 className="font-serif text-2xl tracking-tight">Espresso</h3>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              Making espresso — dialing in grind, dose, and time until the
+              Making espresso: dialing in grind, dose, and time until the
               shot pulls right.
             </p>
           </Reveal>

@@ -33,15 +33,15 @@ export default function Engineering() {
             </p>
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
               <div className="rounded-lg border border-line p-5">
-                <h4 className="font-medium">Capstone — 1st place</h4>
+                <h4 className="font-medium">Capstone: 1st place</h4>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                  Led the team that designed a fully off-grid home —
-                  generation, storage, and systems integration — awarded first
+                  Led the team that designed a fully off-grid home
+                  (generation, storage, and systems integration), awarded first
                   place among capstone projects.
                 </p>
               </div>
               <div className="rounded-lg border border-line p-5">
-                <h4 className="font-medium">FE Exam — passed</h4>
+                <h4 className="font-medium">FE Exam: passed</h4>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                   Passed the Fundamentals of Engineering exam, the first step
                   toward professional licensure.
@@ -64,7 +64,7 @@ export default function Engineering() {
               />
             </div>
             <p className="mt-3 text-sm text-ink-faint">
-              Section GR-8 with the first-place result — and the final
+              Section GR-8 with the first-place result, and the final
               presentation of the off-grid home&rsquo;s budget allocations.
             </p>
           </article>
@@ -95,7 +95,7 @@ export default function Engineering() {
               Aug 2024 – May 2025 · Team design project
             </p>
             <h3 className="mt-2 font-serif text-2xl tracking-tight">
-              Competition vehicle — electrical system
+              Competition vehicle: electrical system
             </h3>
             <div className="mt-4 grid gap-x-10 gap-y-3 sm:grid-cols-2">
               <p className="leading-relaxed text-ink-soft">

@@ -35,15 +35,15 @@ export default function Nav() {
         <a
           href="#top"
           className="flex shrink-0 items-center gap-3"
-          aria-label="Josiah Falde — back to top"
+          aria-label="Josiah Falde, back to top"
         >
           <span
             aria-hidden="true"
-            className="flex h-8 w-8 items-center justify-center rounded-md bg-navy font-serif text-sm font-semibold text-paper"
+            className="font-serif text-xl font-semibold leading-none tracking-tight text-navy md:hidden"
           >
             JF
           </span>
-          <span className="hidden font-serif text-lg tracking-tight md:block">
+          <span className="hidden font-serif text-lg tracking-tight text-navy md:block">
             Josiah Falde
           </span>
         </a>

@@ -34,7 +34,7 @@ export default function Clinical() {
               <ul className="mt-4 space-y-2.5 text-ink-soft">
                 <li className="flex gap-3">
                   <Tick />
-                  First assist in 40+ surgeries — hernia repairs, lipoma
+                  First assist in 40+ surgeries: hernia repairs, lipoma
                   removals, and a laparotomy with bowel resection
                 </li>
                 <li className="flex gap-3">
@@ -84,7 +84,7 @@ export default function Clinical() {
                 <li className="flex gap-3">
                   <Tick />
                   Saw firsthand how paper charts left patients with no lasting
-                  medical record — the problem that became ParakaleoMMC
+                  medical record, the problem that became ParakaleoMMC
                 </li>
               </ul>
             </div>

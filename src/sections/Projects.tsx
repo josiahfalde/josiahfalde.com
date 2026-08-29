@@ -31,7 +31,7 @@ export default function Projects() {
               It exists because I&rsquo;ve translated in those clinics since
               2018 and saw patients arrive with no record of their own
               history. It travels with the mobile clinics we bring to rural
-              Haiti and the Dominican Republic — giving patients a lasting
+              Haiti and the Dominican Republic, giving patients a lasting
               medical history for the first time, so care can build from one
               visit to the next.
             </p>
@@ -77,7 +77,7 @@ export default function Projects() {
               Flywheel
             </h3>
             <p className="mt-3 flex-1 leading-relaxed text-ink-soft">
-              An options-trading analytics app I built and run — position
+              An options-trading analytics app I built and run: position
               tracking, benchmarks, and performance analysis for a
               wheel-strategy portfolio.
             </p>

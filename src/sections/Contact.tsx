@@ -7,7 +7,7 @@ export default function Contact() {
       id="contact"
       eyebrow="06 · Contact"
       title="Get in touch"
-      lead="Whether it’s medicine, engineering, or the places they overlap — I’d be glad to hear from you."
+      lead="Whether it’s medicine, engineering, or the places they overlap, I’d be glad to hear from you."
     >
       <Reveal>
         <div className="flex flex-wrap items-center gap-4">
@@ -33,7 +33,7 @@ export default function Contact() {
           </a>
           <a
             href="https://www.linkedin.com/in/josiah-falde-1a6137254/"
-            className="inline-flex items-center gap-2.5 rounded-lg border border-line px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-copper hover:text-copper-deep"
+            className="inline-flex items-center gap-2.5 px-2 py-3 text-sm font-medium text-copper-deep transition-colors hover:text-ink"
           >
             <svg
               aria-hidden="true"

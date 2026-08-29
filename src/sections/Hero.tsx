@@ -33,7 +33,7 @@ export default function Hero() {
               operating room, translated in mobile medical clinics across
               Haiti and the Dominican Republic since 2018, and built the
               offline charting software our clinics carry so patients keep a
-              lasting medical record. Currently in a gap year — studying for
+              lasting medical record. Currently in a gap year, studying for
               the MCAT and preparing to apply to osteopathic medical schools.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -45,7 +45,7 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="rounded-lg border border-line px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-copper hover:text-copper-deep"
+                className="px-1 py-2.5 text-sm font-medium text-copper-deep transition-colors hover:text-ink"
               >
                 Get in touch
               </a>

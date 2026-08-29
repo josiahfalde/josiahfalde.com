@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* ---------------------------------------------------------------------------
-   Design tokens — RGB triplets so Tailwind opacity modifiers work.
+   Design tokens: RGB triplets so Tailwind opacity modifiers work.
    Palette: warm paper + ink, blueprint navy (engineering), copper (the human,
    hands-on warmth). No literal medical iconography.
 --------------------------------------------------------------------------- */
@@ -56,20 +56,16 @@ body {
 
 /* Scroll-reveal: fades/slides in when the Reveal component marks it visible.
    Fully disabled under prefers-reduced-motion. */
+/* Content is visible by default; only the position eases in. */
 .reveal {
-  opacity: 0;
   transform: translateY(14px);
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+  transition: transform 0.6s ease;
 }
 .reveal.is-visible {
-  opacity: 1;
   transform: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .reveal {
-    opacity: 1;
     transform: none;
     transition: none;
   }

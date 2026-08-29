@@ -27,8 +27,7 @@ export default function Section({
     >
       <div className="mx-auto max-w-content px-5 py-16 sm:px-8 sm:py-24">
         <Reveal>
-          <p className="mb-3 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-copper-deep">
-            <span aria-hidden="true" className="h-px w-8 bg-copper" />
+          <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-copper-deep">
             {eyebrow}
           </p>
           <h2 className="max-w-2xl font-serif text-3xl tracking-tight sm:text-4xl">
