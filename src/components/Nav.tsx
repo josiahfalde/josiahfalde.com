@@ -1,75 +1,103 @@
 import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import ROUTES from "../routes.json";
+import Mark, { type MarkName } from "./Mark";
 import ThemeToggle from "./ThemeToggle";
 
-const LINKS = [
-  { id: "story", label: "Story" },
-  { id: "clinical", label: "Clinical" },
-  { id: "engineering", label: "Engineering" },
-  { id: "projects", label: "Projects" },
-  { id: "hobbies", label: "Hobbies" },
-  { id: "contact", label: "Contact" },
-];
+const PAGES = ROUTES.filter((r) => r.path !== "/");
 
 export default function Nav() {
-  const [active, setActive] = useState<string>("");
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
+
+  // Close the menu whenever the route changes.
+  useEffect(() => setOpen(false), [pathname]);
 
   useEffect(() => {
-    const sections = LINKS.map((l) => document.getElementById(l.id)).filter(
-      (el): el is HTMLElement => el !== null,
-    );
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) setActive(entry.target.id);
-        }
-      },
-      { rootMargin: "-40% 0px -55% 0px" },
-    );
-    sections.forEach((s) => observer.observe(s));
-    return () => observer.disconnect();
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  return (
-    <header className="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-content items-center gap-3 px-5 py-3 sm:px-8">
-        <a
-          href="#top"
-          className="flex shrink-0 items-center gap-3"
-          aria-label="Josiah Falde, back to top"
-        >
-          <span
-            aria-hidden="true"
-            className="font-serif text-xl font-semibold leading-none tracking-tight text-navy md:hidden"
-          >
-            JF
-          </span>
-          <span className="hidden font-serif text-lg tracking-tight text-navy md:block">
-            Josiah Falde
-          </span>
-        </a>
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
 
-        <nav
-          aria-label="Sections"
-          className="nav-scroll ml-auto flex items-center gap-1 overflow-x-auto"
+  return (
+    <header
+      className={`sticky top-0 z-40 bg-paper/90 backdrop-blur-md transition-shadow print:hidden ${
+        scrolled || open ? "shadow-[0_1px_0_rgb(var(--c-line))]" : ""
+      }`}
+    >
+      <div className="mx-auto flex h-14 max-w-content items-center gap-2 px-5 sm:px-8">
+        <Link
+          to="/"
+          className="mr-auto font-serif text-lg tracking-tight text-navy"
+          aria-label="Josiah Falde, home"
         >
-          {LINKS.map((link) => (
-            <a
-              key={link.id}
-              href={`#${link.id}`}
-              aria-current={active === link.id ? "true" : undefined}
-              className={`whitespace-nowrap rounded-md px-2.5 py-1.5 text-sm transition-colors sm:px-3 ${
-                active === link.id
-                  ? "font-medium text-copper-deep"
-                  : "text-ink-soft hover:text-ink"
-              }`}
+          Josiah Falde
+        </Link>
+
+        <nav aria-label="Pages" className="hidden items-center gap-0.5 md:flex">
+          {PAGES.map((p) => (
+            <NavLink
+              key={p.path}
+              to={p.path}
+              className={({ isActive }) =>
+                `rounded-md px-2.5 py-1.5 text-sm transition-colors ${
+                  isActive ? "font-medium text-ink" : "text-ink-soft hover:text-ink"
+                }`
+              }
             >
-              {link.label}
-            </a>
+              {p.name}
+            </NavLink>
           ))}
         </nav>
 
         <ThemeToggle />
+
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+          aria-controls="site-menu"
+          className="rounded-md px-2 py-1.5 text-sm text-ink-soft transition-colors hover:text-ink md:hidden"
+        >
+          {open ? "Close" : "Menu"}
+        </button>
       </div>
+
+      {open && (
+        <nav
+          id="site-menu"
+          aria-label="Pages"
+          className="mx-auto max-w-content px-5 pb-5 pt-1 sm:px-8 md:hidden"
+        >
+          <ul className="grid grid-cols-1 gap-y-1 sm:grid-cols-2 sm:gap-x-8">
+            {PAGES.map((p) => (
+              <li key={p.path}>
+                <NavLink
+                  to={p.path}
+                  className={({ isActive }) =>
+                    `flex items-center gap-3 rounded-md px-2 py-2.5 ${
+                      isActive ? "text-ink" : "text-ink-soft"
+                    }`
+                  }
+                >
+                  <Mark name={p.mark as MarkName} className="text-navy" />
+                  <span className="font-serif text-lg">{p.name}</span>
+                  <span className="ml-auto hidden text-xs text-ink-faint min-[420px]:inline">{p.blurb}</span>
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 }

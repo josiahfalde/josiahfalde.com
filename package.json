@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && node scripts/postbuild.mjs",
     "preview": "vite preview",
     "deploy": "npm run build && npx --yes gh-pages@6 -d dist -b gh-pages -m \"Deploy\""
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.3"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",

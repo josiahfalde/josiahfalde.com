@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// base "./" so the built site works at the apex domain and in local preview
+// Absolute base: pages live at nested paths (/medicine/, /websites/, ...)
 export default defineConfig({
-  base: "./",
+  base: "/",
   plugins: [react()],
 });

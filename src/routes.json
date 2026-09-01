@@ -1,0 +1,74 @@
+[
+  {
+    "path": "/",
+    "name": "Home",
+    "mark": "summit",
+    "title": "Josiah Falde, engineer heading into medicine",
+    "description": "Josiah Falde is a mechanical engineering graduate, EMT, and aspiring osteopathic physician with hands-on surgical and clinic experience in Haiti and the Dominican Republic. Engineering gave me the foundation; medicine gives it a purpose.",
+    "blurb": ""
+  },
+  {
+    "path": "/story",
+    "name": "Story",
+    "mark": "summit",
+    "title": "The story | Josiah Falde",
+    "description": "Why a mechanical engineer is heading to medical school: an earthquake, a rebuilt hospital, and the mobile clinics of southern Haiti and the Dominican Republic.",
+    "blurb": "Why an engineer is heading to medicine"
+  },
+  {
+    "path": "/medicine",
+    "name": "Medicine",
+    "mark": "station",
+    "title": "Medicine | Josiah Falde",
+    "description": "Surgical first assist in rural Haiti, medical translation in mobile clinics since 2018, NREMT-B certification, and clinical shadowing.",
+    "blurb": "Surgery, clinics, and EMT work"
+  },
+  {
+    "path": "/engineering",
+    "name": "Engineering",
+    "mark": "structure",
+    "title": "Engineering | Josiah Falde",
+    "description": "B.S. in Mechanical Engineering, first-place capstone, FE exam passed, a competition vehicle's electrical system, and 3D-printed hospital models.",
+    "blurb": "Degree, capstone, and the toolbox"
+  },
+  {
+    "path": "/projects",
+    "name": "Projects",
+    "mark": "cairn",
+    "title": "Projects | Josiah Falde",
+    "description": "ParakaleoMMC offline clinic charting, Flywheel options analytics, FareScout, Macro Tracker, and Vaultfall: the software Josiah Falde builds and runs.",
+    "blurb": "Software I build and run"
+  },
+  {
+    "path": "/websites",
+    "name": "Websites",
+    "mark": "hex",
+    "title": "Websites for small businesses | Josiah Falde",
+    "description": "Website design and hosting for small businesses: a free design preview first, then a flat-fee build and flat monthly hosting. Recent work from Mobile, AL to Lafayette, LA.",
+    "blurb": "Design and hosting for small businesses"
+  },
+  {
+    "path": "/hobbies",
+    "name": "Hobbies",
+    "mark": "viewpoint",
+    "title": "Hobbies | Josiah Falde",
+    "description": "Photography, piano, and espresso: what Josiah Falde does off the clock.",
+    "blurb": "Photography, piano, espresso"
+  },
+  {
+    "path": "/resume",
+    "name": "Resume",
+    "mark": "flag",
+    "title": "Resume | Josiah Falde",
+    "description": "Education, clinical experience, engineering work, projects, and certifications for Josiah Falde, B.S. Mechanical Engineering and NREMT-B.",
+    "blurb": "Education, experience, certifications"
+  },
+  {
+    "path": "/contact",
+    "name": "Contact",
+    "mark": "pin",
+    "title": "Contact | Josiah Falde",
+    "description": "Get in touch with Josiah Falde by email or LinkedIn.",
+    "blurb": "Email and LinkedIn"
+  }
+]
