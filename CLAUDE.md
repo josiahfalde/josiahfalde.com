@@ -54,9 +54,10 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   structure, cairn, hex, viewpoint, flag, pin), one per page, drawn like survey
   marks. No icon packs.
 - **Palette** (CSS vars in `src/index.css`, RGB triplets consumed by Tailwind
-  as `paper/raised/ink/ink-soft/ink-faint/line/copper/copper-deep/navy`): warm
-  paper + ink, blueprint navy `#1D3A57`, copper `#C0764D` / text-safe
-  `#9A4F2B`. Dark theme is a warm charcoal (`#161411`), navy becomes steel blue.
+  as `paper/raised/ink/ink-soft/ink-faint/line/navy`): warm paper + ink with
+  blueprint navy `#1D3A57` as the SINGLE accent (owner's call 2026-09-02: the
+  old copper/orange accent is gone; do not reintroduce a second accent color).
+  Dark theme is a warm charcoal (`#161411`), navy becomes steel blue.
   Use token classes only, never hex, so both themes stay correct.
 - **Type**: system serif stack (Iowan Old Style / Palatino / Georgia) for
   display, system sans for body, monospace only for genuine data (dates,

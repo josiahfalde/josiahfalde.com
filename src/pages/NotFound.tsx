@@ -14,7 +14,7 @@ export default function NotFound() {
           <li key={r.path}>
             <Link to={r.path} className="group flex items-center gap-3 py-1.5">
               <Mark name={r.mark as MarkName} className="text-navy" />
-              <span className="font-serif text-lg text-ink transition-colors group-hover:text-copper-deep">
+              <span className="font-serif text-lg text-ink transition-colors group-hover:text-navy">
                 {r.name}
               </span>
             </Link>

@@ -104,7 +104,7 @@ export default function Projects() {
               </p>
               <p className="mt-3 leading-relaxed text-ink-soft">
                 The name comes from{" "}
-                <a href="https://parakaleo.com" className="font-medium text-copper-deep hover:text-ink">
+                <a href="https://parakaleo.com" className="font-medium text-navy hover:text-ink">
                   Parakaleo International
                 </a>
                 , my family&rsquo;s missions organization behind the clinics. It runs on the

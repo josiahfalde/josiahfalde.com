@@ -53,7 +53,7 @@ export default function Home() {
                     className="group flex items-center gap-3.5 rounded-md px-3 py-2.5 transition-colors hover:bg-paper"
                   >
                     <Mark name={r.mark as MarkName} className="text-navy" />
-                    <span className="font-serif text-lg leading-none tracking-tight text-ink transition-colors group-hover:text-copper-deep">
+                    <span className="font-serif text-lg leading-none tracking-tight text-ink transition-colors group-hover:text-navy">
                       {r.name}
                     </span>
                     <span className="ml-auto hidden text-right text-sm text-ink-faint sm:inline">{r.blurb}</span>
@@ -95,7 +95,7 @@ export default function Home() {
             <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-8">
               {STATS.map((s) => (
                 <div key={s.label}>
-                  <dd className="whitespace-nowrap font-serif text-3xl tracking-tight text-copper-deep">{s.value}</dd>
+                  <dd className="whitespace-nowrap font-serif text-3xl tracking-tight text-navy">{s.value}</dd>
                   <dt className="mt-1 text-sm leading-snug text-ink-soft">{s.label}</dt>
                 </div>
               ))}
@@ -109,7 +109,7 @@ export default function Home() {
               </Link>
               <Link
                 to="/resume"
-                className="text-sm font-medium text-copper-deep transition-colors hover:text-ink"
+                className="text-sm font-medium text-navy transition-colors hover:text-ink"
               >
                 See the resume
               </Link>

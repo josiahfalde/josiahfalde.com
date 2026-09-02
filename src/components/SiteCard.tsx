@@ -65,7 +65,7 @@ export default function SiteCard({
     </div>
   );
   const title = (
-    <span className="font-serif text-xl tracking-tight text-ink transition-colors group-hover:text-copper-deep">
+    <span className="font-serif text-xl tracking-tight text-ink transition-colors group-hover:text-navy">
       {name}
       {external && <Ext className="ml-1.5 -translate-y-px text-ink-faint" />}
     </span>

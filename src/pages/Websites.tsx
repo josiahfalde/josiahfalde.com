@@ -122,7 +122,7 @@ export default function Websites() {
           >
             Get a free preview
           </a>
-          <a href="#work" className="text-sm font-medium text-copper-deep transition-colors hover:text-ink">
+          <a href="#work" className="text-sm font-medium text-navy transition-colors hover:text-ink">
             See the work
           </a>
         </div>
@@ -164,7 +164,7 @@ export default function Websites() {
           <div className="mt-8 grid gap-10 md:grid-cols-3">
             {STEPS.map((s, i) => (
               <Reveal key={s.n} delay={i * 80}>
-                <p className="font-serif text-6xl leading-none tracking-tight text-copper-deep">{s.n}</p>
+                <p className="font-serif text-6xl leading-none tracking-tight text-navy">{s.n}</p>
                 <h3 className="mt-4 font-serif text-xl tracking-tight">{s.title}</h3>
                 <p className="mt-2 leading-relaxed text-ink-soft">{s.body}</p>
               </Reveal>
@@ -196,7 +196,7 @@ export default function Websites() {
                         aria-hidden="true"
                         className="mb-[0.3em] flex-1 self-end border-b border-dotted border-ink/25"
                       />
-                      <p className="whitespace-nowrap font-serif text-2xl tracking-tight text-copper-deep">
+                      <p className="whitespace-nowrap font-serif text-2xl tracking-tight text-navy">
                         {t.price}
                       </p>
                     </div>
@@ -224,7 +224,7 @@ export default function Websites() {
                         aria-hidden="true"
                         className="mb-[0.3em] flex-1 self-end border-b border-dotted border-ink/25"
                       />
-                      <p className="whitespace-nowrap font-serif text-2xl tracking-tight text-copper-deep">
+                      <p className="whitespace-nowrap font-serif text-2xl tracking-tight text-navy">
                         {t.price}
                         <span className="ml-0.5 font-sans text-sm text-ink-faint">/mo</span>
                       </p>
@@ -264,7 +264,7 @@ export default function Websites() {
               </a>
               <a
                 href="tel:+14434027171"
-                className="font-serif text-xl tracking-tight text-ink transition-colors hover:text-copper-deep"
+                className="font-serif text-xl tracking-tight text-ink transition-colors hover:text-navy"
               >
                 (443) 402-7171
               </a>

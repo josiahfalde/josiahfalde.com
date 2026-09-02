@@ -39,7 +39,7 @@ export default function Story() {
             {CHAPTERS.map((c, i) => (
               <Reveal key={c.year} delay={i * 60}>
                 <article className="grid gap-3 sm:grid-cols-[7rem_1fr] sm:gap-8">
-                  <p className="font-serif text-2xl tracking-tight text-copper-deep sm:pt-1">
+                  <p className="font-serif text-2xl tracking-tight text-navy sm:pt-1">
                     {c.year}
                   </p>
                   <div>
@@ -61,7 +61,7 @@ export default function Story() {
             <p className="mt-3 text-sm leading-relaxed text-ink-faint">
               Preaching at a church plant during a medical clinic in the Dominican Republic. The
               work continues with{" "}
-              <a href="https://parakaleo.com" className="font-medium text-copper-deep hover:text-ink">
+              <a href="https://parakaleo.com" className="font-medium text-navy hover:text-ink">
                 Parakaleo International
               </a>
               , my family&rsquo;s missions organization.

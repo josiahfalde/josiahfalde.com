@@ -4,8 +4,8 @@
 
 /* ---------------------------------------------------------------------------
    Design tokens: RGB triplets so Tailwind opacity modifiers work.
-   Palette: warm paper + ink, blueprint navy (engineering), copper (the human,
-   hands-on warmth). No literal medical iconography.
+   Palette: warm paper + ink neutrals with blueprint navy as the single
+   accent. No literal medical iconography.
 --------------------------------------------------------------------------- */
 :root {
   --c-paper: 250 248 244; /* #FAF8F4 warm paper       */
@@ -14,8 +14,6 @@
   --c-ink-soft: 76 86 101; /* #4C5665 secondary text   */
   --c-ink-faint: 95 106 119; /* #5F6A77 labels, captions */
   --c-line: 229 223 211; /* #E5DFD3 hairlines        */
-  --c-copper: 192 118 77; /* #C0764D decorative       */
-  --c-copper-deep: 154 79 43; /* #9A4F2B text-safe accent */
   --c-navy: 29 58 87; /* #1D3A57 headings/accents */
   color-scheme: light;
 }
@@ -27,8 +25,6 @@
   --c-ink-soft: 178 179 175; /* #B2B3AF */
   --c-ink-faint: 145 146 143; /* #91928F */
   --c-line: 58 53 46; /* #3A352E */
-  --c-copper: 199 123 82; /* #C77B52 */
-  --c-copper-deep: 214 148 103; /* #D69467 text-safe accent */
   --c-navy: 143 176 205; /* #8FB0CD steel blue        */
   color-scheme: dark;
 }
@@ -45,11 +41,11 @@ body {
 }
 
 ::selection {
-  background: rgb(var(--c-copper) / 0.3);
+  background: rgb(var(--c-navy) / 0.25);
 }
 
 :focus-visible {
-  outline: 2px solid rgb(var(--c-copper-deep));
+  outline: 2px solid rgb(var(--c-navy));
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -79,8 +75,6 @@ body {
     --c-ink: 0 0 0;
     --c-ink-soft: 51 51 51;
     --c-ink-faint: 102 102 102;
-    --c-copper: 154 79 43;
-    --c-copper-deep: 154 79 43;
     --c-navy: 29 58 87;
   }
   @page {

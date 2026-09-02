@@ -13,8 +13,6 @@ export default {
         "ink-soft": "rgb(var(--c-ink-soft) / <alpha-value>)",
         "ink-faint": "rgb(var(--c-ink-faint) / <alpha-value>)",
         line: "rgb(var(--c-line) / <alpha-value>)",
-        copper: "rgb(var(--c-copper) / <alpha-value>)",
-        "copper-deep": "rgb(var(--c-copper-deep) / <alpha-value>)",
         navy: "rgb(var(--c-navy) / <alpha-value>)",
       },
       fontFamily: {

@@ -98,7 +98,7 @@ function Block({ heading, entries }: { heading: string; entries: Entry[] }) {
                 <ul className="mt-1.5 space-y-1 text-[0.95rem] leading-relaxed text-ink-soft">
                   {e.items.map((it) => (
                     <li key={it} className="flex gap-2.5">
-                      <span aria-hidden="true" className="mt-[0.7em] h-1 w-1 shrink-0 rounded-full bg-copper" />
+                      <span aria-hidden="true" className="mt-[0.7em] h-1 w-1 shrink-0 rounded-full bg-navy" />
                       <span>{it}</span>
                     </li>
                   ))}
@@ -133,7 +133,7 @@ export default function Resume() {
           <button
             type="button"
             onClick={() => window.print()}
-            className="mt-6 text-sm font-medium text-copper-deep transition-colors hover:text-ink"
+            className="mt-6 text-sm font-medium text-navy transition-colors hover:text-ink"
           >
             Print this page
           </button>
@@ -185,7 +185,7 @@ export default function Resume() {
             <Side heading="Service">
               <p>
                 Medical missions with{" "}
-                <a href="https://parakaleo.com" className="text-copper-deep hover:text-ink print:text-ink">
+                <a href="https://parakaleo.com" className="text-navy hover:text-ink print:text-ink">
                   Parakaleo International
                 </a>
                 , Haiti and the Dominican Republic, since 2018
@@ -193,14 +193,14 @@ export default function Resume() {
             </Side>
             <Side heading="Contact">
               <p>
-                <a href="mailto:josiahfalde@proton.me" className="text-copper-deep hover:text-ink print:text-ink">
+                <a href="mailto:josiahfalde@proton.me" className="text-navy hover:text-ink print:text-ink">
                   josiahfalde@proton.me
                 </a>
               </p>
               <p className="mt-1">
                 <a
                   href="https://www.linkedin.com/in/josiah-falde-1a6137254/"
-                  className="text-copper-deep hover:text-ink print:text-ink"
+                  className="text-navy hover:text-ink print:text-ink"
                 >
                   LinkedIn
                 </a>

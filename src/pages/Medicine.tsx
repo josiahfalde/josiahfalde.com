@@ -5,7 +5,7 @@ import Reveal from "../components/Reveal";
 function Bullet({ children }: { children: React.ReactNode }) {
   return (
     <li className="flex gap-3">
-      <span aria-hidden="true" className="mt-[0.7em] h-1.5 w-1.5 shrink-0 rounded-full bg-copper" />
+      <span aria-hidden="true" className="mt-[0.7em] h-1.5 w-1.5 shrink-0 rounded-full bg-navy" />
       <span>{children}</span>
     </li>
   );
