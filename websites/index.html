@@ -1,157 +1,42 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Website Design &amp; Hosting | Josiah Falde</title>
-  <meta name="description" content="Custom websites for small businesses: free mockup, flat-fee build, and monthly hosting and maintenance." />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <style>
-    :root {
-      --paper: #FAF8F4; --raised: #FFFFFF; --ink: #232A35; --ink-soft: #4C5665;
-      --ink-faint: #5F6A77; --line: #E5DFD3; --copper: #C0764D;
-      --copper-deep: #9A4F2B; --navy: #1D3A57;
-      color-scheme: light;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --paper: #11161D; --raised: #1A212B; --ink: #E9E5DC; --ink-soft: #B2B3AF;
-        --ink-faint: #91928F; --line: #2B333F; --copper: #C77B52;
-        --copper-deep: #D69467; --navy: #8FB0CD;
-        color-scheme: dark;
-      }
-    }
-    * { box-sizing: border-box; margin: 0; }
-    body {
-      background: var(--paper); color: var(--ink);
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      line-height: 1.6; -webkit-font-smoothing: antialiased;
-    }
-    main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.25rem 3rem; }
-    .eyebrow {
-      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
-      font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--copper-deep); margin-bottom: 0.75rem;
-    }
-    h1, h2 {
-      font-family: "Iowan Old Style", Palatino, Georgia, serif;
-      color: var(--navy); line-height: 1.2; font-weight: 600;
-    }
-    h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); margin-bottom: 1rem; }
-    h2 { font-size: 1.25rem; margin: 2.5rem 0 0.75rem; }
-    p { color: var(--ink-soft); margin-bottom: 0.9rem; }
-    .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin-top: 1rem; }
-    .card {
-      background: var(--raised); border: 1px solid var(--line);
-      border-radius: 0.5rem; padding: 1.25rem;
-    }
-    .card h3 { font-size: 1rem; color: var(--ink); margin-bottom: 0.25rem; }
-    .price {
-      font-family: "Iowan Old Style", Palatino, Georgia, serif;
-      font-size: 1.5rem; color: var(--copper-deep); margin-bottom: 0.5rem; display: block;
-    }
-    .card p { font-size: 0.9rem; margin: 0; }
-    ol { padding-left: 1.25rem; color: var(--ink-soft); }
-    ol li { margin-bottom: 0.5rem; }
-    a { color: var(--copper-deep); }
-    .work { margin-top: 1rem; }
-    .work a.shot {
-      display: block; border: 1px solid var(--line); border-radius: 0.5rem;
-      overflow: hidden; background: var(--raised);
-    }
-    .work img { display: block; width: 100%; height: auto; aspect-ratio: 18 / 11; object-fit: cover; object-position: top; }
-    .work .meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 0.75rem; margin-top: 0.75rem; }
-    .work .meta strong { color: var(--ink); font-size: 1rem; }
-    .work .meta span { color: var(--ink-faint); font-size: 0.9rem; }
-    .work .meta a { margin-left: auto; font-size: 0.9rem; }
-    .work p { font-size: 0.9rem; margin-top: 0.4rem; }
-    .contact {
-      margin-top: 2.5rem; padding: 1.25rem; background: var(--raised);
-      border: 1px solid var(--line); border-radius: 0.5rem;
-    }
-    footer {
-      max-width: 44rem; margin: 0 auto; padding: 1.5rem 1.25rem 2.5rem;
-      border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--ink-faint);
-    }
-    footer a { color: var(--ink-faint); }
-  </style>
-</head>
-<body>
-  <main>
-    <p class="eyebrow">Web Services</p>
-    <h1>Website design &amp; hosting for small businesses</h1>
-    <p>
-      I design, build, and host websites for small businesses, primarily
-      home-service companies like plumbers, HVAC contractors, electricians,
-      landscapers, and roofers that need a clean, professional web presence
-      that brings in calls.
-    </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websites for small businesses | Josiah Falde</title>
+    <meta
+      name="description"
+      content="Josiah Falde is a mechanical engineering graduate, EMT, and aspiring osteopathic physician with hands-on surgical and clinic experience in Haiti and the Dominican Republic. Engineering gave me the foundation; medicine gives it a purpose."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://josiahfalde.com/websites/" />
 
-    <h2>How it works</h2>
-    <ol>
-      <li><strong>Free mockup.</strong> I build a design preview of your site first, at no cost. You see exactly what you'd be paying for before any money changes hands.</li>
-      <li><strong>Build.</strong> If you like it, I build and launch the full site for a one-time flat fee.</li>
-      <li><strong>Hosting &amp; maintenance.</strong> A flat monthly fee keeps the site online, secure, and up to date, content changes included.</li>
-    </ol>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://josiahfalde.com/websites/" />
+    <meta property="og:title" content="Websites for small businesses | Josiah Falde" />
+    <meta
+      property="og:description"
+      content="Mechanical engineering graduate, EMT, and aspiring osteopathic physician. Surgical first assist and medical translator in Haiti and the Dominican Republic; builder of ParakaleoMMC, an offline-first clinic charting system."
+    />
+    <meta property="og:image" content="https://josiahfalde.com/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <h2>Recent work</h2>
-    <div class="work">
-      <a class="shot" href="https://www.code3solution.com/" target="_blank" rel="noopener">
-        <img src="/websites/code3.jpg" alt="Homepage of Code 3 Property Solutions, a property services company in Mobile, Alabama" width="2160" height="1320" loading="lazy" />
-      </a>
-      <div class="meta">
-        <strong>Code 3 Property Solutions</strong>
-        <span>Mobile, AL</span>
-        <a href="https://www.code3solution.com/" target="_blank" rel="noopener">code3solution.com</a>
-      </div>
-      <p>
-        Firefighter-owned lawn care, junk removal, and pressure washing company.
-        Seven-page site with a page per service, Google reviews pulled onto the
-        page, a text-a-photo quote form, and a hiring page. Replaced a Canva
-        one-pager.
-      </p>
-    </div>
-
-    <h2>Pricing</h2>
-    <p>
-      There are two costs, and I want you to know about both before you
-      commit to anything. The first is a one-time flat fee to design and
-      build the site. The second is a flat monthly fee for hosting and
-      maintenance, which keeps the site online, secure, and up to date, with
-      content changes included. The monthly fee is ongoing for as long as
-      you want the site up, and you can cancel it at any time.
-    </p>
-    <p>
-      The build fee is priced to what a single new customer is worth to your
-      business. A site for a shop where one job is a few hundred dollars
-      costs less than one for a contractor whose average job is several
-      thousand. Either way you'll know both numbers, the build fee and the
-      monthly fee, up front before the build starts. A
-      typical site covers your services, service area, reviews, photos, and
-      a clear way for customers to call or request a quote; larger businesses
-      may add per-service pages, photo galleries, and quote request forms.
-    </p>
-
-    <h2>Billing &amp; terms</h2>
-    <p>
-      Builds are billed as a one-time flat fee. Hosting and maintenance is
-      billed monthly and can be canceled anytime. Payment is by card through
-      Stripe's secure checkout. Questions about billing or refunds:
-      email me directly.
-    </p>
-
-    <div class="contact">
-      <h2 style="margin-top:0">Get a free mockup</h2>
-      <p style="margin-bottom:0">
-        Email <a href="mailto:josiahfalde@proton.me">josiahfalde@proton.me</a>
-        with your business name and what you do, and I'll send back a design
-        preview of your new site. Or call or text
-        <a href="tel:+14434027171">(443) 402-7171</a>.
-      </p>
-    </div>
-  </main>
-  <footer>
-    <a href="/">josiahfalde.com</a> · Josiah Falde
-  </footer>
-</body>
+    <script>
+      // Set theme before first paint to avoid a flash.
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark =
+            stored === "dark" ||
+            (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BENz5FVf.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C4giYfTA.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
