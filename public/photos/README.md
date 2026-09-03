@@ -14,12 +14,12 @@ the site looks finished either way.
 | `capstone-team.jpg`       | /engineering, capstone, landscape       |
 | `capstone-presenting.jpg` | /engineering, capstone, tall frame      |
 | `surgical.jpg`            | /medicine, surgical first assist, 16:10 |
+| `translator.jpg`          | /medicine, medical translator, 16:10    |
 
 ## Open slots (drop a file and it appears)
 
 | Filename                          | Where it appears                     | Suggested content                        |
 | --------------------------------- | ------------------------------------ | ---------------------------------------- |
-| `translator.jpg`                  | /medicine, medical translator        | Translating at a mobile clinic (16:10)   |
 | `prints.jpg`                      | /engineering, hospital scale models  | Printed models or printer at work (16:9) |
 | `photography/01.jpg` to `06.jpg`  | /hobbies, photography gallery        | Six favorite shots; tiles crop to square (center crop), any orientation works |
 

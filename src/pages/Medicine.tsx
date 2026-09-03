@@ -74,7 +74,7 @@ export default function Medicine() {
             </div>
             <PhotoSlot
               src="/photos/translator.jpg"
-              alt="Mobile medical clinic in rural Haiti"
+              alt="Josiah, stethoscope around his neck and notebook in hand, listening to a patient during a consultation in a mobile clinic tent"
               label="Mobile clinic"
               className="aspect-[16/10] lg:order-2"
             />

@@ -48,13 +48,13 @@ const ENGINEERING: Entry[] = [
   },
   {
     when: "Aug 2024 to May 2025",
-    title: "Competition Vehicle, Electrical System",
-    where: "Team design project",
+    title: "Electrathon Vehicle, Electrical System",
+    where: "Electrathon competition, Pensacola Christian College",
     items: [
       "Designed the electrical system end to end: battery configuration, wiring layout, safety features",
       "Ran motor and battery trade studies against cost, performance, and energy density to meet budget",
       "Integrated the system into the chassis with mechanical and structural teams; tested and troubleshot for competition reliability",
-      "Team took first place in the competition",
+      "Team took first place in the Electrathon competition",
     ],
   },
   {
