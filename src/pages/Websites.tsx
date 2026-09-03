@@ -69,7 +69,7 @@ const BUILD_TIERS = [
 const MONTHLY_TIERS = [
   {
     name: "Hosting",
-    price: "$29",
+    price: "$39",
     body: "The site stays online, fast, and secure: hosting, SSL, domain and DNS management, backups, and small text or photo edits when you need them.",
   },
   {
