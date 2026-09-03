@@ -13,38 +13,13 @@ const WORK = [
       "Firefighter-owned lawn care, junk removal, and pressure washing. Seven pages, one per service, Google reviews on the page, a text-a-photo quote form, and a hiring page. Replaced a Canva one-pager.",
   },
   {
-    src: "/work/bay-landscaping.jpg",
-    alt: "Homepage of Bay Landscaping, a commercial landscaper in Mobile, Alabama",
-    name: "Bay Landscaping",
-    meta: "Preview build. Mobile, AL",
-    href: "https://bay-landscaping.vercel.app/",
+    src: "/work/clean-scene.jpg",
+    alt: "Homepage of Clean Scene Housekeeping & Property Services in Pace, Florida",
+    name: "Clean Scene Housekeeping & Property Services",
+    meta: "Going live soon. Pace, FL",
+    href: "https://clean-scene-housekeeping.vercel.app/",
     blurb:
-      "Commercial landscape installation and maintenance company with 60+ staff. A 25-page redesign built around their own crew and job photos.",
-  },
-  {
-    src: "/work/affordable-car-tires.jpg",
-    alt: "Homepage of Affordable Car Tires in Theodore, Alabama",
-    name: "Affordable Car Tires",
-    meta: "Preview build. Theodore, AL",
-    href: "https://affordable-car-tires.vercel.app/",
-    blurb:
-      "New and used tire shop with 146 Google reviews and no website. One page: services, reviews, hours, and a call button that matters more than anything else.",
-  },
-  {
-    src: "/work/raders.jpg",
-    alt: "Homepage of Rader's Builders Express, a lumber yard in Lafayette, Louisiana",
-    name: "Rader's Builders Express",
-    meta: "Preview build. Lafayette, LA",
-    href: "https://raders-builders-express.vercel.app/",
-    blurb: "Old-school lumber and hardware counter. The site looks like the place.",
-  },
-  {
-    src: "/work/auto-tech.jpg",
-    alt: "Homepage of JR Auto-Tech Automotive in Abbeville, Louisiana",
-    name: "Auto-Tech Automotive",
-    meta: "Preview build. Abbeville, LA",
-    href: "https://auto-tech-automotive.vercel.app/",
-    blurb: "Independent repair shop. Brakes, A/C, tires, tint, one call button.",
+      "Housekeeping and vacation-rental turnover service. Before-and-after sliders from real jobs, reviews, and a straightforward quote path.",
   },
 ];
 
@@ -62,7 +37,7 @@ const BUILD_TIERS = [
   {
     name: "Large site",
     price: "from $1,500",
-    body: "Twelve pages or more: photo galleries, careers, service areas, a page per city. Scoped and quoted up front, like the 25-page Bay Landscaping build.",
+    body: "Twelve pages or more: photo galleries, careers, service areas, a page per city. Scoped and quoted up front, like a 25-page landscaping build.",
   },
 ];
 
@@ -136,24 +111,20 @@ export default function Websites() {
           </Reveal>
           <div className="mt-8 grid gap-x-8 gap-y-12 sm:grid-cols-2">
             {WORK.map((w, i) => (
-              <Reveal key={w.name} delay={(i % 2) * 80} className={i === 0 ? "sm:col-span-2" : ""}>
+              <Reveal key={w.name} delay={i * 80} className="sm:col-span-2">
                 <SiteCard
                   src={w.src}
                   alt={w.alt}
                   name={w.name}
                   meta={w.meta}
                   href={w.href}
-                  aspect={i === 0 ? "aspect-[16/9] sm:aspect-[21/10]" : "aspect-[16/10]"}
+                  aspect="aspect-[16/9] sm:aspect-[21/10]"
                 >
                   {w.blurb}
                 </SiteCard>
               </Reveal>
             ))}
           </div>
-          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ink-faint">
-            Preview builds are the free first step: a finished design the owner can look at before
-            deciding anything.
-          </p>
         </section>
 
         {/* How it works */}
