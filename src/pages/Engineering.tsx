@@ -79,6 +79,7 @@ export default function Engineering() {
               <h2 className="mt-2 font-serif text-3xl tracking-tight">
                 Competition vehicle: electrical system
               </h2>
+              <p className="mt-1 text-ink-faint">First place</p>
             </div>
             <div className="grid gap-x-10 gap-y-4 sm:grid-cols-2">
               <p className="leading-relaxed text-ink-soft">

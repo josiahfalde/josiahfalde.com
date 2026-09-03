@@ -54,6 +54,7 @@ const ENGINEERING: Entry[] = [
       "Designed the electrical system end to end: battery configuration, wiring layout, safety features",
       "Ran motor and battery trade studies against cost, performance, and energy density to meet budget",
       "Integrated the system into the chassis with mechanical and structural teams; tested and troubleshot for competition reliability",
+      "Team took first place in the competition",
     ],
   },
   {

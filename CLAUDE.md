@@ -17,7 +17,9 @@ that essay onto this site.
   `src/routes.json` with that page's title/description/canonical/OG baked in,
   plus `dist/404.html`, so GitHub Pages serves every page with a 200.
 - `npm run deploy` builds then publishes `dist/` to the `gh-pages` branch
-  (apex domain via `public/CNAME`). Only deploy when the owner says to.
+  (apex domain via `public/CNAME`). For simple owner-requested fixes, deploy
+  right after verifying (owner's standing instruction, 2026-09-02); pause only
+  for big unseen redesigns or anything risky.
 
 ## Structure
 
