@@ -48,8 +48,11 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
 ## Design system
 
 - **Signature**: a real topographic map. `src/data/contours.ts` holds 100 m
-  contours of the Massif de la Hotte (southern Haiti, Pic Macaya area) derived
-  from SRTM 30 m elevations via OpenTopoData; index contours every 500 m.
+  contours of the hills above Cayes-Jacmel (southeastern Haiti, window
+  18.17-18.47 N, 72.70-72.10 W; the town sits on the coast at the bottom,
+  right of center) derived from SRTM 30 m elevations via OpenTopoData; index
+  contours every 500 m. Owner moved it here from the Massif de la Hotte on
+  2026-09-04.
   It fills the home hero (fading out at the bottom) and stands in for missing
   photos in `PhotoSlot`. Regenerate only if the window changes.
 - **Marks**: `Mark.tsx` is the site's own symbol set (summit, station,
@@ -76,7 +79,9 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
 
 ## Content rules (owner's explicit choices)
 
-- Contact = `josiahfalde@proton.me` + LinkedIn ONLY on personal pages. Never
+- Contact = `josiahfalde@proton.me` + LinkedIn + personal Instagram
+  (`@josiahfalde`, added 2026-09-04) on personal pages. The music account
+  `@josiahfalde_music` lives only in the piano section of /hobbies. Never
   street address, GPA, GitHub links, or resume PDFs. The one exception: the
   phone number `(443) 402-7171` appears on `/websites` for the web business.
 - Status phrasing: "gap year, studying for the MCAT and preparing to apply to

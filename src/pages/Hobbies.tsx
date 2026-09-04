@@ -37,6 +37,15 @@ export default function Hobbies() {
                 The slowest of the three. I learn pieces I love and record them once they&rsquo;re
                 ready.
               </p>
+              <p className="mt-3">
+                <a
+                  href="https://www.instagram.com/josiahfalde_music/"
+                  className="inline-flex items-center gap-2.5 font-medium text-navy transition-colors hover:text-ink"
+                >
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+                  @josiahfalde_music
+                </a>
+              </p>
             </Reveal>
             <Reveal delay={160}>
               <h2 className="font-serif text-2xl tracking-tight">Espresso</h2>

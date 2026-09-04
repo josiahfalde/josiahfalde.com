@@ -66,7 +66,7 @@ export default function Home() {
 
         <p className="pointer-events-none absolute bottom-4 right-5 hidden items-center gap-3 font-mono text-[11px] text-ink-faint sm:right-8 md:flex">
           <span aria-hidden="true" className="inline-block h-px w-16 bg-ink-faint/70" />
-          Massif de la Hotte, Haiti. 100 m contours from 30 m SRTM.
+          Cayes-Jacmel, Haiti. 100 m contours from 30 m SRTM.
         </p>
       </section>
 

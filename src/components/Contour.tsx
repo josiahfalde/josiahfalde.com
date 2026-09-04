@@ -1,8 +1,8 @@
 import { INDEX, MINOR, VIEWBOX } from "../data/contours";
 
 /**
- * The site's signature: real 100 m contours of the Massif de la Hotte in
- * southern Haiti (SRTM 30 m elevations, generated into src/data/contours.ts).
+ * The site's signature: real 100 m contours of the hills above Cayes-Jacmel
+ * in southeastern Haiti (SRTM 30 m elevations, generated into src/data/contours.ts).
  * Index contours (every 500 m) are drawn heavier, the way a printed
  * topographic sheet does it. Strokes stay 1 px at any scale.
  */

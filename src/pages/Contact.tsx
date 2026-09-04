@@ -29,6 +29,15 @@ export default function Contact() {
                 LinkedIn
               </a>
             </p>
+            <p className="mt-4">
+              <a
+                href="https://www.instagram.com/josiahfalde/"
+                className="inline-flex items-center gap-2.5 font-medium text-navy transition-colors hover:text-ink"
+              >
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+                Instagram
+              </a>
+            </p>
           </div>
           <div className="space-y-4 leading-relaxed text-ink-soft">
             <p>

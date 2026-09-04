@@ -43,6 +43,14 @@ export default function Footer() {
             </a>
           </li>
           <li>
+            <a
+              href="https://www.instagram.com/josiahfalde/"
+              className="text-ink-soft transition-colors hover:text-ink"
+            >
+              Instagram
+            </a>
+          </li>
+          <li>
             <a href="https://parakaleo.com" className="text-ink-soft transition-colors hover:text-ink">
               Parakaleo International
             </a>
