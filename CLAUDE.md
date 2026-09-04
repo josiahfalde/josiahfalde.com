@@ -10,7 +10,15 @@ that essay onto this site.
 ## Stack and commands
 
 - Vite + React 18 + TypeScript + Tailwind CSS 3 + react-router-dom 7. Static,
-  no backend, no analytics, no webfonts.
+  no backend, no webfonts.
+- Analytics (added 2026-09-04) live in `index.html` between
+  `<!-- analytics:start -->` / `<!-- analytics:end -->`, so postbuild copies
+  them into every route page: GA4 Measurement ID `G-L4W2ELD7ML` (property
+  "josiahfalde.com" under account "Josiah Falde Web Design", stream
+  15721872385; enhanced measurement handles SPA route changes) and Microsoft
+  Clarity project `yd9q9t184q`. Custom GA4 events on contact links:
+  email_click, call_click, linkedin_click, instagram_click (params link_text,
+  link_url, page_path). Keep the block when editing the template.
 - `npm run dev` dev server (client routing works out of the box)
 - `npm run build` = `tsc && vite build && node scripts/postbuild.mjs`. The
   postbuild step writes `dist/<route>/index.html` for every entry in
