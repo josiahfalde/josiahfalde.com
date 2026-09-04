@@ -234,10 +234,10 @@ export default function Websites() {
                 josiahfalde@proton.me
               </a>
               <a
-                href="tel:+14434027171"
+                href="tel:+14434402717"
                 className="font-serif text-xl tracking-tight text-ink transition-colors hover:text-navy"
               >
-                (443) 402-7171
+                (443) 440-2717
               </a>
             </div>
           </Reveal>

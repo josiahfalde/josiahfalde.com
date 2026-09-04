@@ -83,7 +83,7 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   (`@josiahfalde`, added 2026-09-04) on personal pages. The music account
   `@josiahfalde_music` lives only in the piano section of /hobbies. Never
   street address, GPA, GitHub links, or resume PDFs. The one exception: the
-  phone number `(443) 402-7171` appears on `/websites` for the web business.
+  phone number `(443) 440-2717` appears on `/websites` for the web business.
 - Status phrasing: "gap year, studying for the MCAT and preparing to apply to
   osteopathic medical schools". No application-cycle specifics or test dates.
 - Drone delivery is a clearly labeled future aspiration, not a project.
