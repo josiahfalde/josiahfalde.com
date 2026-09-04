@@ -86,11 +86,11 @@ export default function Home() {
               physician.
             </p>
             <p className="mt-6 max-w-xl leading-relaxed text-ink-soft">
-              I&rsquo;ve first-assisted in a rural Haitian operating room, translated in mobile
-              medical clinics across Haiti and the Dominican Republic since 2018, and built the
-              offline charting software our clinics carry so patients keep a lasting medical
-              record. Currently in a gap year, studying for the MCAT and preparing to apply to
-              osteopathic medical schools.
+              I&rsquo;ve first-assisted in a rural Haitian operating room and, since 2018,
+              translated in mobile medical clinics across Haiti and the Dominican Republic. I also
+              built the offline charting software our clinics carry, so patients keep a lasting
+              medical record. I&rsquo;m now in a gap year, studying for the MCAT and preparing to
+              apply to osteopathic medical schools.
             </p>
             <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-8">
               {STATS.map((s) => (
