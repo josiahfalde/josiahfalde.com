@@ -92,8 +92,9 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   `@josiahfalde_music` lives only in the piano section of /hobbies. Never
   street address, GPA, GitHub links, or resume PDFs. The one exception: the
   phone number `(443) 440-2717` appears on `/websites` for the web business.
-- Status phrasing: "gap year, studying for the MCAT and preparing to apply to
-  osteopathic medical schools". No application-cycle specifics or test dates.
+- Status phrasing (updated 2026-09-04, MCAT already taken): "gap year, finishing
+  prerequisites and applying to osteopathic medical schools". No
+  application-cycle specifics, test dates, or scores.
 - Drone delivery is a clearly labeled future aspiration, not a project.
 - Facts only from his resumes and his corrections. Do not invent numbers.
 - No em dashes anywhere in copy. Plain, factual, middle register.
