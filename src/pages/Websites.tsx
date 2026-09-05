@@ -16,8 +16,8 @@ const WORK = [
     src: "/work/clean-scene.jpg",
     alt: "Homepage of Clean Scene Housekeeping & Property Services in Pace, Florida",
     name: "Clean Scene Housekeeping & Property Services",
-    meta: "Going live soon. Pace, FL",
-    href: "https://clean-scene-housekeeping.vercel.app/",
+    meta: "Live. Pace, FL. cleanscenehouse.com",
+    href: "https://cleanscenehouse.com/",
     blurb:
       "Housekeeping and vacation-rental turnover service. Before-and-after sliders from real jobs, reviews, and a straightforward quote path.",
   },
