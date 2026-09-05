@@ -9,7 +9,7 @@ import SiteCard from "../components/SiteCard";
 const LEGEND = ROUTES.filter((r) => r.path !== "/" && r.path !== "/contact");
 
 const STATS = [
-  { value: "40+", label: "surgeries first-assisted" },
+  { value: "40+", label: "surgeries as first assist" },
   { value: "15+", label: "rural clinics served" },
   { value: "NREMT-B", label: "certified EMT" },
   { value: "1st", label: "place capstone design" },
@@ -87,10 +87,10 @@ export default function Home() {
             </p>
             <p className="mt-6 max-w-xl leading-relaxed text-ink-soft">
               I&rsquo;ve translated in mobile medical clinics across Haiti and the Dominican
-              Republic since 2018, first-assisted in a rural Haitian operating room, and built the
-              offline charting software our clinics carry so patients keep a lasting medical
-              record. Currently in a gap year, studying for the MCAT and preparing to apply to
-              osteopathic medical schools.
+              Republic since 2018, served as first assist in a rural Haitian operating room, and
+              built the offline charting software our clinics carry so patients keep a lasting
+              medical record. Currently in a gap year, studying for the MCAT and preparing to
+              apply to osteopathic medical schools.
             </p>
             <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-8">
               {STATS.map((s) => (
