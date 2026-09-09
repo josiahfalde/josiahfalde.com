@@ -32,7 +32,7 @@ const PLANS = [
     tagline: "The site stays up, fast, and secure.",
     includes: "",
     features: ["Hosting and SSL", "Daily backups", "Security updates", "Uptime monitoring"],
-    note: "Content changes billed hourly.",
+    note: "Content changes are $40 each.",
     proof: "",
     cta: "Start with Foundation",
   },
@@ -44,7 +44,7 @@ const PLANS = [
     tagline: "Get found, get calls, get booked.",
     includes: "Everything in Foundation, plus",
     features: [
-      "Monthly content edits",
+      "One content edit a month",
       "Google Business Profile management",
       "Your Google reviews on the site, kept current",
       "Seasonal photo and service updates",
