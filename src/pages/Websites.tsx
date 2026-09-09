@@ -23,46 +23,57 @@ const WORK = [
   },
 ];
 
-const BUILD_TIERS = [
+const PLANS = [
   {
-    name: "Single page",
-    price: "$495",
-    body: "One page that does the job: services, photos, reviews, hours, and call and text buttons that work from a phone. Right for a shop that mostly needs to be found.",
+    name: "Foundation",
+    monthly: 79,
+    build: 750,
+    featured: false,
+    tagline: "The site stays up, fast, and secure.",
+    includes: "",
+    features: ["Hosting and SSL", "Daily backups", "Security updates", "Uptime monitoring"],
+    note: "Content changes billed hourly.",
+    proof: "",
+    cta: "Start with Foundation",
   },
   {
-    name: "Business site",
-    price: "$895",
-    body: "Up to eight pages with a page per service, a quote form that emails you, reviews on the page, and the groundwork for Google to rank each service. The Code 3 build above is one of these.",
+    name: "Growth",
+    monthly: 149,
+    build: 750,
+    featured: true,
+    tagline: "Get found, get calls, get booked.",
+    includes: "Everything in Foundation, plus",
+    features: [
+      "Monthly content edits",
+      "Google Business Profile management",
+      "Your Google reviews on the site, kept current",
+      "Seasonal photo and service updates",
+    ],
+    note: "",
+    proof: "",
+    cta: "Start with Growth",
   },
   {
-    name: "Large site",
-    price: "from $1,500",
-    body: "Twelve pages or more: photo galleries, careers, service areas, a page per city. Scoped and quoted up front, like a 25-page landscaping build.",
+    name: "Market Leader",
+    monthly: 279,
+    build: 1500,
+    featured: false,
+    tagline: "Own the search results in your area.",
+    includes: "Everything in Growth, plus",
+    features: [
+      "A landing page for every service",
+      "Ongoing local SEO work",
+      "A call-tracking number",
+      "Priority response",
+    ],
+    note: "",
+    proof:
+      "Code 3 Property Solutions, above, is built this way: a page for every service and a Google Business Profile that stays current.",
+    cta: "Start with Market Leader",
   },
 ];
 
-const MONTHLY_TIERS = [
-  {
-    name: "Hosting",
-    price: "$39",
-    body: "The site stays online, fast, and secure: hosting, SSL, domain and DNS management, backups, and small text or photo edits when you need them.",
-  },
-  {
-    name: "Care",
-    price: "$59",
-    body: "Everything in Hosting, plus real upkeep: content changes whenever you ask, seasonal pages, and your latest Google reviews kept current on the site. Same-week turnaround. The plan I recommend for most shops.",
-  },
-  {
-    name: "Insights",
-    price: "$129",
-    body: "Everything in Care, plus proof the site is working: visitor analytics and heatmaps, tracked links and QR codes for any ads you run, and a plain-English report every month. Visitors, where they came from, what they searched, how many called.",
-  },
-  {
-    name: "Full service",
-    price: "$249",
-    body: "Everything in Insights, and I run your Google presence too: replies to your reviews in your voice, weekly photo posts, and a Business Profile kept accurate. The whole front door of the business, handled.",
-  },
-];
+const usd = (n: number) => "$" + n.toLocaleString("en-US");
 
 const STEPS = [
   {
@@ -78,7 +89,7 @@ const STEPS = [
   {
     n: "3",
     title: "Hosting and maintenance",
-    body: "A flat monthly fee keeps the site online, secure, and up to date, content changes included.",
+    body: "A flat monthly plan keeps the site online, secure, and working for you. Pay a year up front and get two months free.",
   },
 ];
 
@@ -148,70 +159,124 @@ export default function Websites() {
           <Reveal>
             <h2 className="font-serif text-3xl tracking-tight">Pricing</h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-ink-soft">
-              Two costs, both flat, both fixed before the work starts: a one-time fee to build
-              the site, and a monthly fee to keep it running. No hourly billing. The domain and
-              everything on the site are yours, and you can cancel the monthly at any time.
+              Two costs, both flat and both fixed before the work starts: a one-time fee to
+              build the site, and a monthly plan that keeps it online and working for you. Pay
+              a year up front on any plan and get two months free. The domain and everything on
+              the site are yours, and you can cancel the monthly at any time.
             </p>
           </Reveal>
 
-          <div className="mt-12 grid gap-14 lg:grid-cols-2 lg:gap-16">
-            {/* The build */}
-            <Reveal>
-              <h3 className="font-serif text-xl tracking-tight text-ink">The build, once</h3>
-              <div className="mt-7 space-y-9">
-                {BUILD_TIERS.map((t) => (
-                  <div key={t.name}>
-                    <div className="flex items-baseline gap-3">
-                      <h4 className="font-serif text-lg tracking-tight">{t.name}</h4>
-                      <span
-                        aria-hidden="true"
-                        className="mb-[0.3em] flex-1 self-end border-b border-dotted border-ink/25"
-                      />
-                      <p className="whitespace-nowrap font-serif text-2xl tracking-tight text-navy">
-                        {t.price}
-                      </p>
-                    </div>
-                    <p className="mt-2 max-w-xl leading-relaxed text-ink-soft">{t.body}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-8 max-w-xl text-sm leading-relaxed text-ink-faint">
-                For scale: freelancers typically charge $2,500 to $7,000 for the middle one, and
-                agencies more. I&rsquo;m early and building a portfolio, so these are launch
-                rates. They will rise as the roster fills; the rate you sign at is the rate you
-                keep.
-              </p>
-            </Reveal>
+          <Reveal delay={80}>
+            <div className="mt-12 grid gap-y-10 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
+              {PLANS.map((t) => (
+                <div
+                  key={t.name}
+                  className={`grid grid-rows-[auto_auto_auto_1fr_auto_auto] gap-0 lg:row-span-6 lg:grid-rows-subgrid ${
+                    t.featured
+                      ? "rounded-lg bg-raised px-6 py-8 ring-1 ring-ink/10 shadow-[0_6px_14px_-10px_rgb(var(--c-navy)/0.45)] sm:px-7 lg:-my-4 lg:py-12"
+                      : "lg:px-1 lg:py-8"
+                  }`}
+                >
+                  {/* Row 1: the featured line. Every column holds the slot so rows stay level. */}
+                  <p
+                    className={`mb-3 text-sm font-medium text-navy ${t.featured ? "" : "hidden lg:block"}`}
+                    aria-hidden={!t.featured}
+                  >
+                    {t.featured ? "Most popular with contractors" : "\u00a0"}
+                  </p>
 
-            {/* Every month */}
-            <Reveal delay={80}>
-              <h3 className="font-serif text-xl tracking-tight text-ink">Every month after</h3>
-              <div className="mt-7 space-y-9">
-                {MONTHLY_TIERS.map((t) => (
-                  <div key={t.name}>
-                    <div className="flex items-baseline gap-3">
-                      <h4 className="font-serif text-lg tracking-tight">{t.name}</h4>
-                      <span
-                        aria-hidden="true"
-                        className="mb-[0.3em] flex-1 self-end border-b border-dotted border-ink/25"
-                      />
-                      <p className="whitespace-nowrap font-serif text-2xl tracking-tight text-navy">
-                        {t.price}
-                        <span className="ml-0.5 font-sans text-sm text-ink-faint">/mo</span>
-                      </p>
-                    </div>
-                    <p className="mt-2 max-w-xl leading-relaxed text-ink-soft">{t.body}</p>
+                  {/* Row 2: name */}
+                  <div>
+                    <h3 className="font-serif text-2xl tracking-tight text-ink">{t.name}</h3>
+                    <p className="mt-1 text-ink-soft">{t.tagline}</p>
                   </div>
-                ))}
+
+                  {/* Row 3: price */}
+                  <div className="mt-6">
+                    <p className="font-serif text-5xl leading-none tracking-tight text-navy">
+                      {usd(t.monthly)}
+                      <span className="ml-1.5 font-sans text-base font-normal text-ink-faint">
+                        /mo
+                      </span>
+                    </p>
+                    <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                      or {usd(t.monthly * 10)} a year, two months free
+                    </p>
+                    <p className="text-sm leading-relaxed text-ink-soft">
+                      {usd(t.build)} to build, once
+                    </p>
+                  </div>
+
+                  {/* Row 4: what you get */}
+                  <div className="mt-7">
+                    {t.includes && <p className="text-sm font-medium text-ink">{t.includes}</p>}
+                    <ul
+                      className={`space-y-2 text-[0.95rem] leading-relaxed text-ink-soft ${
+                        t.includes ? "mt-3" : ""
+                      }`}
+                    >
+                      {t.features.map((f) => (
+                        <li key={f} className="flex gap-3">
+                          <span
+                            aria-hidden="true"
+                            className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-navy/60"
+                          />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                    {t.note && <p className="mt-3 text-sm text-ink-faint">{t.note}</p>}
+                  </div>
+
+                  {/* Row 5: proof, where there is some */}
+                  <p
+                    className={`mt-6 text-sm leading-relaxed text-ink-faint ${t.proof ? "" : "hidden lg:block"}`}
+                  >
+                    {t.proof}
+                  </p>
+
+                  {/* Row 6: the one action, anchored to the bottom */}
+                  <div className="mt-6 self-end">
+                    {t.featured ? (
+                      <a
+                        href="#mockup"
+                        className="inline-block rounded-md bg-navy px-5 py-2.5 text-sm font-medium text-paper transition-colors hover:bg-ink"
+                      >
+                        {t.cta}
+                      </a>
+                    ) : (
+                      <a
+                        href="#mockup"
+                        className="inline-block py-2.5 text-sm font-medium text-navy transition-colors hover:text-ink"
+                      >
+                        {t.cta}
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          {/* Beyond the menu: quoted work */}
+          <Reveal delay={120}>
+            <div className="mt-16 grid gap-5 md:grid-cols-[1fr_2fr] md:gap-12 lg:mt-20 lg:px-1">
+              <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">Bigger operation?</h3>
+              <div className="max-w-xl">
+                <p className="leading-relaxed text-ink-soft">
+                  Multiple locations, an established name, or specific goals in mind? Your
+                  website should carry the weight your business already does. I&rsquo;ll quote it
+                  on what it&rsquo;s actually worth to you, not on a checklist.
+                </p>
+                <a
+                  href="#mockup"
+                  className="mt-4 inline-block py-2.5 font-medium text-navy transition-colors hover:text-ink"
+                >
+                  Let&rsquo;s talk
+                </a>
               </div>
-              <p className="mt-8 max-w-xl text-sm leading-relaxed text-ink-faint">
-                Full-service care like this usually runs $100 to $300 a month. Pay a year up
-                front and get two months free. Large sites are quoted individually, build and
-                monthly both. Extra pages after launch are $100 each; a tracked phone number for
-                a print or radio ad is $15 a month on any plan.
-              </p>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
         </section>
 
         {/* Mockup */}
