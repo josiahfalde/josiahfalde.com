@@ -1,7 +1,7 @@
 /**
  * The site's own symbol set, drawn like survey and map marks on one 24-unit
  * grid: a summit, a survey station, a structure, a cairn, a hex, a viewpoint,
- * a flag, a pin. One per page; used in the home legend, the page headers,
+ * a globe, a flag, a pin. One per page; used in the home legend, the page headers,
  * and the menu. Stroke 1.5, no fills except the small centre dots.
  */
 export type MarkName =
@@ -12,7 +12,8 @@ export type MarkName =
   | "hex"
   | "viewpoint"
   | "flag"
-  | "pin";
+  | "pin"
+  | "globe";
 
 const SHAPES: Record<MarkName, JSX.Element> = {
   summit: (
@@ -62,6 +63,13 @@ const SHAPES: Record<MarkName, JSX.Element> = {
       <path d="M12 20.5v-7" />
       <circle cx="12" cy="8.5" r="5" />
       <circle cx="12" cy="8.5" r="1.4" fill="currentColor" stroke="none" />
+    </>
+  ),
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="7.5" />
+      <ellipse cx="12" cy="12" rx="3.2" ry="7.5" />
+      <path d="M4.5 12h15" />
     </>
   ),
 };

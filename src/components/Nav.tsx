@@ -37,13 +37,13 @@ export default function Nav() {
       <div className="mx-auto flex h-14 max-w-content items-center gap-2 px-5 sm:px-8">
         <Link
           to="/"
-          className="mr-auto font-serif text-lg tracking-tight text-navy"
+          className="mr-auto whitespace-nowrap font-serif text-lg tracking-tight text-navy"
           aria-label="Josiah Falde, home"
         >
           Josiah Falde
         </Link>
 
-        <nav aria-label="Pages" className="hidden items-center gap-0.5 md:flex">
+        <nav aria-label="Pages" className="hidden items-center gap-0.5 lg:flex">
           {PAGES.map((p) => (
             <NavLink
               key={p.path}
@@ -66,7 +66,7 @@ export default function Nav() {
           onClick={() => setOpen((o) => !o)}
           aria-expanded={open}
           aria-controls="site-menu"
-          className="rounded-md px-2 py-1.5 text-sm text-ink-soft transition-colors hover:text-ink md:hidden"
+          className="rounded-md px-2 py-1.5 text-sm text-ink-soft transition-colors hover:text-ink lg:hidden"
         >
           {open ? "Close" : "Menu"}
         </button>
@@ -76,7 +76,7 @@ export default function Nav() {
         <nav
           id="site-menu"
           aria-label="Pages"
-          className="mx-auto max-w-content px-5 pb-5 pt-1 sm:px-8 md:hidden"
+          className="mx-auto max-w-content px-5 pb-5 pt-1 sm:px-8 lg:hidden"
         >
           <ul className="grid grid-cols-1 gap-y-1 sm:grid-cols-2 sm:gap-x-8">
             {PAGES.map((p) => (

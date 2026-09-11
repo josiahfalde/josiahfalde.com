@@ -9,6 +9,7 @@ import Engineering from "./pages/Engineering";
 import Projects from "./pages/Projects";
 import Websites from "./pages/Websites";
 import Hobbies from "./pages/Hobbies";
+import Places from "./pages/Places";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/websites" element={<Websites />} />
           <Route path="/hobbies" element={<Hobbies />} />
+          <Route path="/places" element={<Places />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           {/* The old /sites directory now lives on Projects. */}

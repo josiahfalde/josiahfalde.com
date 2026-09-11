@@ -43,10 +43,11 @@ src/
                        Nav, Footer, home Index legend, Seo, NotFound and postbuild all read it.
   data/contours.ts     generated contour paths (see Signature below); do not hand-edit
   index.css            design tokens (CSS vars), reveal motion, print styles
-  App.tsx              routes: / story medicine engineering projects websites hobbies resume contact
+  App.tsx              routes: / story medicine engineering projects websites hobbies places resume contact
                        (/sites redirects to /projects; * = NotFound)
-  components/          Nav (desktop links + phone Menu panel), Footer, PageHeader, Mark (symbol set),
-                       Contour (the map), PhotoSlot, SiteCard (+ Ext arrow), Reveal, Seo, ThemeToggle
+  components/          Nav (desktop links from lg, Menu panel below), Footer, PageHeader, Mark (symbol set),
+                       Contour (the map), Globe (/places, lazy-loaded), PhotoSlot, SiteCard (+ Ext arrow),
+                       Reveal, Seo, ThemeToggle
   pages/               one file per route; content lives inline
 ```
 
@@ -64,8 +65,15 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   It fills the home hero (fading out at the bottom) and stands in for missing
   photos in `PhotoSlot`. Regenerate only if the window changes.
 - **Marks**: `Mark.tsx` is the site's own symbol set (summit, station,
-  structure, cairn, hex, viewpoint, flag, pin), one per page, drawn like survey
-  marks. No icon packs.
+  structure, cairn, hex, viewpoint, globe, flag, pin), one per page, drawn like
+  survey marks. No icon packs.
+- **Globe** (`/places`, added 2026-09-10 on branch `places`, not yet merged or
+  deployed pending owner review): an orthographic globe in the same map
+  language (d3-geo + Natural Earth 1:110m land from `world-atlas`, fetched as
+  an asset; topojson-client). Drag / arrow keys to spin, idle spin until first
+  touch, click a place in the index or on the globe to fly to it. Places, copy
+  and photo lists live in `src/pages/Places.tsx`; entries without photos render
+  as text only (see public/photos/README.md).
 - **Palette** (CSS vars in `src/index.css`, RGB triplets consumed by Tailwind
   as `paper/raised/ink/ink-soft/ink-faint/line/navy`): warm paper + ink with
   blueprint navy `#1D3A57` as the SINGLE accent (owner's call 2026-09-02: the
@@ -96,6 +104,11 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   classroom finishing prerequisite coursework and applying to osteopathic
   medical schools". Never call it a "gap year" (owner: it sounds idle; he is
   taking classes). No application-cycle specifics, test dates, or scores.
+- `/places` tone (owner, 2026-09-10): a modest travel log, never a brag list.
+  Frame the travel as coming with the ministry work (deputation across 45
+  states, Haiti, the DR) plus a few trips for their own sake. Facts only: Norway
+  = summer 2026 right after graduating; Alaska = high school senior trip; Spain
+  and France = one trip, for fun. Do not invent towns, dates, or details.
 - Drone delivery is a clearly labeled future aspiration, not a project.
 - Facts only from his resumes and his corrections. Do not invent numbers.
 - No em dashes anywhere in copy. Plain, factual, middle register.
