@@ -108,7 +108,7 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   flat. He wants it to show how much fun he has traveling ("currently it reads
   like I'm bored of those places" was his note on the first draft). Still plain
   register, no gushing.
-  Frame the travel as coming with the ministry work (deputation across 45
+  Frame the travel as coming with the ministry work (deputation across 44
   states, Haiti, the DR) plus a few trips for their own sake. Facts only: Norway
   = summer 2026 right after graduating; Alaska = high school senior trip; Spain
   and France = one trip, for fun. Do not invent towns, dates, or details.

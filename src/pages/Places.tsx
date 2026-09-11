@@ -50,12 +50,12 @@ const PLACES: Place[] = [
   },
   {
     id: "states",
-    name: "45 states and counting",
-    label: "45 states",
+    name: "44 states and counting",
+    label: "44 states",
     when: "Deputation",
     lon: -98.5,
     lat: 39.5,
-    note: "Most of these came on deputation, traveling with my family from church to church across the country to raise support for the work in Haiti. Long drives, a lot of the country seen through a windshield, and I would do it all again. Five to go.",
+    note: "Most of these came on deputation, traveling with my family from church to church across the country to raise support for the work in Haiti. Long drives, a lot of the country seen through a windshield, and I would do it all again. Six to go.",
     photos: [],
   },
   {
@@ -149,7 +149,7 @@ export default function Places() {
       <PageHeader
         mark="globe"
         title="Where I’ve been"
-        lead="I love traveling, and I’ve been lucky to do a lot of it. Most came with the work: my family’s ministry took us through Haiti, the Dominican Republic, and forty-five states. The rest I went for the joy of going."
+        lead="I love traveling, and I’ve been lucky to do a lot of it. Most came with the work: my family’s ministry took us through Haiti, the Dominican Republic, and forty-four states. The rest I went for the joy of going."
       />
 
       {/* The globe and its index */}
