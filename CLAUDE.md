@@ -104,7 +104,10 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   classroom finishing prerequisite coursework and applying to osteopathic
   medical schools". Never call it a "gap year" (owner: it sounds idle; he is
   taking classes). No application-cycle specifics, test dates, or scores.
-- `/places` tone (owner, 2026-09-10): a modest travel log, never a brag list.
+- `/places` tone (owner, 2026-09-10): warm and glad, never a brag list and never
+  flat. He wants it to show how much fun he has traveling ("currently it reads
+  like I'm bored of those places" was his note on the first draft). Still plain
+  register, no gushing.
   Frame the travel as coming with the ministry work (deputation across 45
   states, Haiti, the DR) plus a few trips for their own sake. Facts only: Norway
   = summer 2026 right after graduating; Alaska = high school senior trip; Spain

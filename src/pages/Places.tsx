@@ -29,7 +29,7 @@ const PLACES: Place[] = [
     lon: -72.53,
     lat: 18.23,
     side: "left",
-    note: "More home than a place I have been. My family's ministry is based in southern Haiti, and the mobile clinics, the rebuilt hospital, and the contour map on this site's front page (the coast at Cayes-Jacmel) all come from here.",
+    note: "More home than a place I have been, and the place I am always glad to get back to. My family's ministry is based in southern Haiti; the mobile clinics, the rebuilt hospital, and the contour map on this site's front page (the coast at Cayes-Jacmel) all come from here.",
     photos: [{ src: "/photos/photography/01.jpg", alt: "Sunrise over the Haitian coast, a boat cutting toward cliffs" }],
   },
   {
@@ -39,7 +39,7 @@ const PLACES: Place[] = [
     when: "Since 2021",
     lon: -70.3,
     lat: 18.9,
-    note: "The other half of the island. Mobile clinics and church plants with Parakaleo, translating between patients and providers.",
+    note: "The other half of the island, and a place I have come to love: mobile clinics and church plants with Parakaleo, translating between patients and providers, and a lot of good days in between.",
     photos: [
       {
         src: "/photos/clinic.jpg",
@@ -55,7 +55,7 @@ const PLACES: Place[] = [
     when: "Deputation",
     lon: -98.5,
     lat: 39.5,
-    note: "Most of these came on deputation, traveling with my family from church to church across the country to raise support for the work in Haiti. Five to go.",
+    note: "Most of these came on deputation, traveling with my family from church to church across the country to raise support for the work in Haiti. Long drives, a lot of the country seen through a windshield, and I would do it all again. Five to go.",
     photos: [],
   },
   {
@@ -65,7 +65,7 @@ const PLACES: Place[] = [
     when: "Summer 2026",
     lon: 8.5,
     lat: 61.5,
-    note: "The trip I took right after graduating, a senior trip of sorts.",
+    note: "The trip I took right after graduating, a senior trip of sorts. It did not disappoint.",
     photos: [],
   },
   {
@@ -76,7 +76,7 @@ const PLACES: Place[] = [
     lon: -150.5,
     lat: 63.5,
     side: "left",
-    note: "My high school senior trip.",
+    note: "My high school senior trip, and still one of my favorites.",
     photos: [],
   },
   {
@@ -86,7 +86,7 @@ const PLACES: Place[] = [
     when: "For fun",
     lon: 0.5,
     lat: 43.0,
-    note: "Two countries in one go, purely for the fun of it.",
+    note: "Two countries in one go, for no better reason than wanting to see them. Exactly as good as it sounds.",
     photos: [],
   },
 ];
@@ -149,7 +149,7 @@ export default function Places() {
       <PageHeader
         mark="globe"
         title="Where I’ve been"
-        lead="Most of it came with the work: my family’s ministry took us through Haiti, the Dominican Republic, and forty-five states. A few trips were just for the trip."
+        lead="I love traveling, and I’ve been lucky to do a lot of it. Most came with the work: my family’s ministry took us through Haiti, the Dominican Republic, and forty-five states. The rest I went for the joy of going."
       />
 
       {/* The globe and its index */}
@@ -210,7 +210,7 @@ export default function Places() {
           </Reveal>
         ))}
         <p className="text-sm text-ink-faint">
-          Not the whole list. Canada and a few others did not get a section.
+          Not the whole list. Canada and a few others did not get a section, and I am always planning the next one.
         </p>
       </section>
     </>
