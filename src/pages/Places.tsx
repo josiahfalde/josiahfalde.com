@@ -83,10 +83,10 @@ const PLACES: Place[] = [
     id: "spain-france",
     name: "Spain and France",
     label: "Spain & France",
-    when: "For fun",
+    when: "Sibling trip",
     lon: 0.5,
     lat: 43.0,
-    note: "Two countries in one go, for no better reason than wanting to see them. Exactly as good as it sounds.",
+    note: "A sibling trip, two countries in one go. Good company makes a good trip, and this one had the best.",
     photos: [],
   },
 ];

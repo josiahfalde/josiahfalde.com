@@ -111,7 +111,7 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   Frame the travel as coming with the ministry work (deputation across 44
   states, Haiti, the DR) plus a few trips for their own sake. Facts only: Norway
   = summer 2026 right after graduating; Alaska = high school senior trip; Spain
-  and France = one trip, for fun. Do not invent towns, dates, or details.
+  and France = one sibling trip (lean on the siblings, not "for fun"). Do not invent towns, dates, or details.
 - Drone delivery is a clearly labeled future aspiration, not a project.
 - Facts only from his resumes and his corrections. Do not invent numbers.
   Timeline for context (owner, 2026-09-10; keep it quiet, never spell it out):
