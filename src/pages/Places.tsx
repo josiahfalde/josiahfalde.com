@@ -86,7 +86,7 @@ const PLACES: Place[] = [
     when: "Sibling trip",
     lon: 0.5,
     lat: 43.0,
-    note: "A sibling trip: out to see a bit more of the world, and to visit missionary friends we love in Spain.",
+    note: "A sibling trip: Madrid, up to Santander, over the border to Biarritz, and plenty of stops in between, with a visit to missionary friends we love in Spain along the way.",
     photos: [],
   },
 ];
