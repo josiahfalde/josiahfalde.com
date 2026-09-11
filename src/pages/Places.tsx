@@ -209,9 +209,6 @@ export default function Places() {
             <Entry place={p} />
           </Reveal>
         ))}
-        <p className="text-sm text-ink-faint">
-          Not the whole list. Canada and a few others did not get a section, and I am always planning the next one.
-        </p>
       </section>
     </>
   );
