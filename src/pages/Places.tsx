@@ -149,7 +149,7 @@ export default function Places() {
       <PageHeader
         mark="globe"
         title="Where I’ve been"
-        lead="I love traveling, and I’ve been lucky to do a lot of it. Most came with the work: my family’s ministry took us through Haiti, the Dominican Republic, and forty-four states. The rest I went for the joy of going."
+        lead="I love traveling, and I’ve been blessed to do a lot of it. Most came with the work: my family’s ministry took us through Haiti, the Dominican Republic, and forty-four states. The rest I went for the joy of going."
       />
 
       {/* The globe and its index */}
