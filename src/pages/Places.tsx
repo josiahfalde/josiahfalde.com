@@ -83,7 +83,7 @@ const PLACES: Place[] = [
     id: "spain-france",
     name: "Spain and France",
     label: "Spain & France",
-    when: "One trip",
+    when: "For fun",
     lon: 0.5,
     lat: 43.0,
     note: "Two countries in one go, purely for the fun of it.",
@@ -110,8 +110,8 @@ function Photos({ place }: { place: Place }) {
 function Caption({ place, className = "" }: { place: Place; className?: string }) {
   return (
     <div className={className}>
-      <p className="font-mono text-xs text-ink-faint">{place.when}</p>
-      <h2 className="mt-2 font-serif text-3xl tracking-tight">{place.name}</h2>
+      <h2 className="font-serif text-3xl tracking-tight">{place.name}</h2>
+      <p className="mt-2 font-mono text-xs text-ink-faint">{place.when}</p>
     </div>
   );
 }
