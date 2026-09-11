@@ -32,7 +32,7 @@ const CLINICAL: Entry[] = [
     when: "Pensacola, FL",
     title: "Clinical Shadowing",
     where: "Baptist Healthcare",
-    body: "30 hours shadowing Dr. Matthew Butters.",
+    body: "40+ hours shadowing Dr. Matthew Butters.",
   },
 ];
 

@@ -97,7 +97,7 @@ export default function Medicine() {
               <p className="font-mono text-xs text-ink-faint">Baptist Healthcare, Pensacola, FL</p>
               <h2 className="mt-2 font-serif text-2xl tracking-tight">Clinical shadowing</h2>
               <p className="mt-3 leading-relaxed text-ink-soft">
-                30 hours shadowing Dr. Matthew Butters at Baptist Healthcare in Pensacola.
+                40+ hours shadowing Dr. Matthew Butters at Baptist Healthcare in Pensacola.
               </p>
             </article>
           </div>
