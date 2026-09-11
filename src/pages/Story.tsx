@@ -20,8 +20,8 @@ const CHAPTERS = [
   },
   {
     year: "Now",
-    title: "The gap year",
-    body: "I graduated with my B.S. in Mechanical Engineering in May 2026. The MCAT is behind me; this year I’m finishing prerequisites and applying to osteopathic medical schools, while continuing medical missions work in Haiti and the Dominican Republic. The goal hasn’t changed since that funeral: step into suffering, and be useful in it.",
+    title: "The application year",
+    body: "I graduated with my B.S. in Mechanical Engineering in May 2026. The MCAT is behind me; this year I’m back in the classroom finishing prerequisite coursework and applying to osteopathic medical schools, while continuing medical missions work in Haiti and the Dominican Republic. The goal hasn’t changed since that funeral: step into suffering, and be useful in it.",
   },
 ];
 

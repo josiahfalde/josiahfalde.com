@@ -89,8 +89,8 @@ export default function Home() {
               I&rsquo;ve translated in mobile medical clinics across Haiti and the Dominican
               Republic since 2018, served as first assist in a rural Haitian operating room, and
               built the offline charting software our clinics carry so patients keep a lasting
-              medical record. Currently in a gap year, finishing prerequisites and applying to
-              osteopathic medical schools.
+              medical record. Now back in the classroom finishing prerequisite coursework and
+              applying to osteopathic medical schools.
             </p>
             <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-8">
               {STATS.map((s) => (
