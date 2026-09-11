@@ -67,8 +67,7 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
 - **Marks**: `Mark.tsx` is the site's own symbol set (summit, station,
   structure, cairn, hex, viewpoint, globe, flag, pin), one per page, drawn like
   survey marks. No icon packs.
-- **Globe** (`/places`, added 2026-09-10 on branch `places`, not yet merged or
-  deployed pending owner review): an orthographic globe in the same map
+- **Globe** (`/places`, added 2026-09-10, merged and DEPLOYED the same day): an orthographic globe in the same map
   language (d3-geo + Natural Earth 1:110m land from `world-atlas`, fetched as
   an asset; topojson-client). Drag / arrow keys to spin, idle spin until first
   touch, click a place in the index or on the globe to fly to it. Places, copy
