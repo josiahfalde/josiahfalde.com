@@ -111,6 +111,9 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   and France = one trip, for fun. Do not invent towns, dates, or details.
 - Drone delivery is a clearly labeled future aspiration, not a project.
 - Facts only from his resumes and his corrections. Do not invent numbers.
+  Timeline for context (owner, 2026-09-10; keep it quiet, never spell it out):
+  first Haiti trip 2017, translating in medical clinics since 2018, Dominican
+  Republic work began 2021.
 - No em dashes anywhere in copy. Plain, factual, middle register.
 - `/websites`: "Live" only for paying customers (Code 3). Prospect previews are
   labeled "Preview build". Add each new live customer site there and to

@@ -36,10 +36,10 @@ const PLACES: Place[] = [
     id: "dominican-republic",
     name: "Dominican Republic",
     label: "Dominican Republic",
-    when: "Since 2018",
+    when: "Since 2021",
     lon: -70.3,
     lat: 18.9,
-    note: "The other half of the island. Mobile clinics and church plants with Parakaleo, where I have translated between patients and providers since 2018.",
+    note: "The other half of the island. Mobile clinics and church plants with Parakaleo, translating between patients and providers.",
     photos: [
       {
         src: "/photos/clinic.jpg",
