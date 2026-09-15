@@ -4,6 +4,15 @@ import SiteCard from "../components/SiteCard";
 
 const WORK = [
   {
+    src: "/work/lydia-brianne.jpg",
+    alt: "Homepage of Lydia Brianne Photo, a candid photographer in Gulf Breeze, Florida",
+    name: "Lydia Brianne Photo",
+    meta: "Live. Gulf Breeze, FL. lydiabrianne.photos",
+    href: "https://lydiabrianne.photos/",
+    blurb:
+      "Candid photography for couples, families, and weddings on the Florida Panhandle. The homepage is a camera viewfinder: press the shutter and it advances through a roll of her recent sessions. Nine albums open straight into her client galleries, plus a booking page.",
+  },
+  {
     src: "/work/code3.jpg",
     alt: "Homepage of Code 3 Property Solutions, a property services company in Mobile, Alabama",
     name: "Code 3 Property Solutions",
@@ -20,15 +29,6 @@ const WORK = [
     href: "https://cleanscenehouse.com/",
     blurb:
       "Housekeeping and vacation-rental turnover service. Before-and-after sliders from real jobs, reviews, and a straightforward quote path.",
-  },
-  {
-    src: "/work/lydia-brianne.jpg",
-    alt: "Homepage of Lydia Brianne Photo, a candid photographer in Gulf Breeze, Florida",
-    name: "Lydia Brianne Photo",
-    meta: "Live. Gulf Breeze, FL. lydiabrianne.photos",
-    href: "https://lydiabrianne.photos/",
-    blurb:
-      "Candid photography for couples, families, and weddings on the Florida Panhandle. The homepage is a camera viewfinder: press the shutter and it advances through a roll of her recent sessions. Nine albums open straight into her client galleries, plus a booking page.",
   },
 ];
 
