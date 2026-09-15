@@ -117,6 +117,12 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   first Haiti trip 2017, translating in medical clinics since 2018, Dominican
   Republic work began 2021.
 - No em dashes anywhere in copy. Plain, factual, middle register.
-- `/websites`: "Live" only for paying customers (Code 3). Prospect previews are
-  labeled "Preview build". Add each new live customer site there and to
-  `public/work/`.
+- `/websites`: only PUBLISHED work (a site on its own domain: customers and
+  friend builds alike). Prospect previews are never listed (owner, 2026-09-03).
+  Live now: Code 3, Clean Scene, Lydia Brianne Photo (added 2026-09-15).
+  Adding one: append to the WORK array in `src/pages/Websites.tsx` (meta =
+  "Live. Town, ST. domain") + a 1600x1000 jpg in `public/work/`. Screenshot
+  recipe (Playwright, headless): viewport 1600x788 so a 100vh hero's copy
+  clears the desktop 21:10 crop (top 762px), then `full_page` screenshot
+  clipped to 1600x1000; check the phone 16:9 crop (top 900px) does not shave
+  a heading. Render the card at 1280 and 400 wide before deploying.
