@@ -2,7 +2,7 @@ import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import SiteCard from "../components/SiteCard";
 
-/** Field schematic of ParakaleoMMC: tablets on the clinic's own Wi-Fi,
+/** Field schematic of Parakaleo EMR: tablets on the clinic's own Wi-Fi,
  *  a Raspberry Pi holding the records, sync only when a connection exists. */
 function ClinicSchematic() {
   const label = "fill-current font-mono";
@@ -84,12 +84,12 @@ export default function Projects() {
       />
 
       <div className="mx-auto max-w-content px-5 sm:px-8">
-        {/* ParakaleoMMC */}
+        {/* Parakaleo EMR */}
         <Reveal>
           <article className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
             <div>
               <p className="font-mono text-xs text-ink-faint">In use in our mobile clinics</p>
-              <h2 className="mt-2 font-serif text-4xl tracking-tight">ParakaleoMMC</h2>
+              <h2 className="mt-2 font-serif text-4xl tracking-tight">Parakaleo EMR</h2>
               <p className="mt-5 leading-relaxed text-ink-soft">
                 An offline-first medical charting system for rural mobile clinics: iPads talking to
                 a Raspberry Pi local server, fully functional with zero internet. Built with my

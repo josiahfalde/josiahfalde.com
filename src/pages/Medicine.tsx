@@ -68,7 +68,7 @@ export default function Medicine() {
                 </Bullet>
                 <Bullet>
                   Saw firsthand how paper charts left patients with no lasting medical record, the
-                  problem that became ParakaleoMMC
+                  problem that became Parakaleo EMR
                 </Bullet>
               </ul>
             </div>

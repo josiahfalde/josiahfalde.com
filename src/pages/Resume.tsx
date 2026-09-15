@@ -68,7 +68,7 @@ const ENGINEERING: Entry[] = [
 const PROJECTS: Entry[] = [
   {
     when: "In use",
-    title: "ParakaleoMMC",
+    title: "Parakaleo EMR",
     body: "Offline-first medical charting for mobile clinics: iPads on a local Raspberry Pi server, fully functional with no internet. Gives clinic patients a lasting medical record. Built with a nurse and a cybersecurity specialist.",
   },
   {

@@ -16,7 +16,7 @@ const CHAPTERS = [
   {
     year: "Since 2018",
     title: "The clinics",
-    body: "I’ve been translating in rural mobile clinics in Haiti and the Dominican Republic since 2018, sitting between patients and the physicians, PAs, and NPs treating them. From that seat you notice a system problem: paper charts don’t follow patients, so every visit starts from zero. With my sister, a nurse, and my brother, a cybersecurity specialist, I built ParakaleoMMC, an offline charting system our mobile clinics carry with them, so patients finally have a medical history that follows them from one visit to the next.",
+    body: "I’ve been translating in rural mobile clinics in Haiti and the Dominican Republic since 2018, sitting between patients and the physicians, PAs, and NPs treating them. From that seat you notice a system problem: paper charts don’t follow patients, so every visit starts from zero. With my sister, a nurse, and my brother, a cybersecurity specialist, I built Parakaleo EMR, an offline charting system our mobile clinics carry with them, so patients finally have a medical history that follows them from one visit to the next.",
   },
   {
     year: "Now",
