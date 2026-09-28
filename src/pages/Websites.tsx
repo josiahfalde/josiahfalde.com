@@ -76,8 +76,8 @@ const PLANS = [
     tagline: "Own the search results in your area.",
     includes: "Everything in Growth, plus",
     features: [
-      "A landing page for every service",
-      "Ongoing local SEO work",
+      "A landing page for every service and every city you work in",
+      "Up to three tracking numbers, one per ad",
       "Priority response",
     ],
     note: "",
