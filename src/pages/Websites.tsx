@@ -61,7 +61,6 @@ const PLANS = [
     features: [
       "Lead text alerts: a tap on your site texts your phone",
       "A call tracking number",
-      "Review requests: one tap texts your customer a link to review you on Google",
       "Monthly performance report",
       "One content edit a month",
     ],
@@ -104,12 +103,6 @@ const ADDONS = [
         price: 15,
         per: true,
         note: "A number for your ads and truck that forwards to your cell and logs every call. Included in Growth.",
-      },
-      {
-        name: "Review requests",
-        price: 15,
-        per: true,
-        note: "One tap after a job texts your customer a link to leave a Google review. Included in Growth.",
       },
       {
         name: "Monthly performance report",
