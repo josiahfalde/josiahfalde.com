@@ -79,7 +79,7 @@ const BUILDS = [
   },
   {
     name: "Full site",
-    price: "$750",
+    price: "$1,200",
     body: "A page for every service and every city you work in, built to be found on Google.",
     example: "Code 3",
     href: "https://www.code3solution.com/",
