@@ -35,7 +35,7 @@ const WORK = [
 const PLANS = [
   {
     name: "Foundation",
-    monthly: 59,
+    monthly: 79,
     build: 750,
     featured: false,
     tagline: "The site stays up, fast, and secure.",
@@ -53,7 +53,7 @@ const PLANS = [
   },
   {
     name: "Growth",
-    monthly: 149,
+    monthly: 129,
     build: 750,
     featured: true,
     tagline: "Get found, get calls, get booked.",
@@ -64,26 +64,9 @@ const PLANS = [
       "Monthly performance report",
       "One content edit a month",
     ],
-    note: "",
+    note: "$168 a month bought separately.",
     proof: "",
     cta: "Start with Growth",
-  },
-  {
-    name: "Market Leader",
-    monthly: 279,
-    build: 1500,
-    featured: false,
-    tagline: "Own the search results in your area.",
-    includes: "Everything in Growth, plus",
-    features: [
-      "A landing page for every service and every city you work in",
-      "Up to three tracking numbers, one per ad",
-      "Priority response",
-    ],
-    note: "",
-    proof:
-      "Code 3 Property Solutions, above, is built this way: a page for every service and a site that keeps earning calls.",
-    cta: "Start with Market Leader",
   },
 ];
 
@@ -115,6 +98,12 @@ const ADDONS = [
   {
     heading: "One time",
     items: [
+      {
+        name: "Every-service site build",
+        price: 1500,
+        per: false,
+        note: "A landing page for every service and every city you work in, in place of the $750 build. Code 3 Property Solutions, above, is built this way.",
+      },
       { name: "Extra page or city landing page", price: 100, per: false, note: "" },
       {
         name: "Online estimate calculator",
@@ -239,7 +228,7 @@ export default function Websites() {
           </Reveal>
 
           <Reveal delay={80}>
-            <div className="mt-12 grid gap-y-10 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
+            <div className="mt-12 grid gap-y-10 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-12 lg:gap-y-0">
               {PLANS.map((t) => (
                 <div
                   key={t.name}
