@@ -1,6 +1,6 @@
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
-import SiteCard from "../components/SiteCard";
+import SiteCard, { Ext } from "../components/SiteCard";
 
 const WORK = [
   {
@@ -36,7 +36,6 @@ const PLANS = [
   {
     name: "Foundation",
     monthly: 79,
-    build: 750,
     featured: false,
     tagline: "The site stays up, fast, and secure.",
     includes: "",
@@ -54,7 +53,6 @@ const PLANS = [
   {
     name: "Growth",
     monthly: 129,
-    build: 750,
     featured: true,
     tagline: "Get found, get calls, get booked.",
     includes: "Everything in Foundation, plus",
@@ -67,6 +65,31 @@ const PLANS = [
     note: "$168 a month bought separately.",
     proof: "",
     cta: "Start with Growth",
+  },
+];
+
+/* Build sizes: one flat fee each, with a live example of the size. */
+const BUILDS = [
+  {
+    name: "One page",
+    price: "$500",
+    body: "Everything on one scrolling page: services, photos, reviews, pricing, and a way to reach you.",
+    example: "Clean Scene",
+    href: "https://cleanscenehouse.com/",
+  },
+  {
+    name: "Full site",
+    price: "$750",
+    body: "A page for every service and every city you work in, built to be found on Google.",
+    example: "Code 3",
+    href: "https://www.code3solution.com/",
+  },
+  {
+    name: "Bigger operation",
+    price: "Quoted",
+    body: "Multiple locations, an established name, or specific goals in mind? I quote it on what it is worth to you, not on a checklist.",
+    example: "",
+    href: "#mockup",
   },
 ];
 
@@ -98,16 +121,10 @@ const ADDONS = [
   {
     heading: "One time",
     items: [
-      {
-        name: "Every-service site build",
-        price: 1500,
-        per: false,
-        note: "A landing page for every service and every city you work in, in place of the $750 build. Code 3 Property Solutions, above, is built this way.",
-      },
       { name: "Extra page or city landing page", price: 100, per: false, note: "" },
       {
         name: "Online estimate calculator",
-        price: 250,
+        price: 150,
         per: false,
         note: "Customers price their own job on your site, like the square-foot tool on cleanscenehouse.com.",
       },
@@ -263,9 +280,6 @@ export default function Websites() {
                     <p className="mt-3 text-sm leading-relaxed text-ink-soft">
                       or {usd(t.monthly * 10)} a year, two months free
                     </p>
-                    <p className="text-sm leading-relaxed text-ink-soft">
-                      {usd(t.build)} to build, once
-                    </p>
                   </div>
 
                   {/* Row 4: what you get */}
@@ -319,10 +333,58 @@ export default function Websites() {
             </div>
           </Reveal>
 
+          {/* Build: one flat fee by size, each with a live example. Subgrid keeps the
+              name, price, body and link rows level across the three columns. */}
+          <Reveal delay={120}>
+            <div className="mt-16 lg:mt-20 lg:px-1">
+              <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">Build</h3>
+              <p className="mt-3 max-w-xl leading-relaxed text-ink-soft">
+                One flat fee, fixed before the work starts. Pick the size that fits.
+              </p>
+              <div className="mt-8 grid gap-y-8 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-0">
+                {BUILDS.map((b) => (
+                  <div
+                    key={b.name}
+                    className="grid grid-rows-[auto_auto_1fr_auto] lg:row-span-4 lg:grid-rows-subgrid"
+                  >
+                    <h4 className="font-serif text-xl tracking-tight text-ink">{b.name}</h4>
+                    <p className="mt-2 font-serif text-3xl leading-none tracking-tight text-navy">
+                      {b.price}
+                      {b.price !== "Quoted" && (
+                        <span className="ml-1.5 font-sans text-sm font-normal text-ink-faint">once</span>
+                      )}
+                    </p>
+                    <p className="mt-4 text-[0.95rem] leading-relaxed text-ink-soft">{b.body}</p>
+                    <p className="mt-4">
+                      {b.example ? (
+                        <a
+                          href={b.href}
+                          target="_blank"
+                          rel="noopener"
+                          className="inline-flex items-center py-1 text-sm font-medium text-navy transition-colors hover:text-ink"
+                        >
+                          Like {b.example}
+                          <Ext className="ml-1.5 -translate-y-px" />
+                        </a>
+                      ) : (
+                        <a
+                          href={b.href}
+                          className="inline-block py-1 text-sm font-medium text-navy transition-colors hover:text-ink"
+                        >
+                          Let&rsquo;s talk
+                        </a>
+                      )}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+
           {/* Add-ons: a rate sheet in two dot-leader ledgers. The leader is an empty
               flex item, so its bottom edge is its baseline and the dots sit on the
               text baseline; `last baseline` keeps them on the final line if a name wraps. */}
-          <Reveal delay={120}>
+          <Reveal delay={160}>
             <div className="mt-16 lg:mt-20 lg:px-1">
               <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">
                 Add to any plan
@@ -363,25 +425,6 @@ export default function Websites() {
             </div>
           </Reveal>
 
-          {/* Beyond the menu: quoted work */}
-          <Reveal delay={160}>
-            <div className="mt-16 grid gap-5 md:grid-cols-[1fr_2fr] md:gap-12 lg:mt-20 lg:px-1">
-              <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">Bigger operation?</h3>
-              <div className="max-w-xl">
-                <p className="leading-relaxed text-ink-soft">
-                  Multiple locations, an established name, or specific goals in mind? Your
-                  website should carry the weight your business already does. I&rsquo;ll quote it
-                  on what it&rsquo;s actually worth to you, not on a checklist.
-                </p>
-                <a
-                  href="#mockup"
-                  className="mt-4 inline-block py-2.5 font-medium text-navy transition-colors hover:text-ink"
-                >
-                  Let&rsquo;s talk
-                </a>
-              </div>
-            </div>
-          </Reveal>
         </section>
 
         {/* Mockup */}
