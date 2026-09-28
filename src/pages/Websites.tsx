@@ -35,12 +35,18 @@ const WORK = [
 const PLANS = [
   {
     name: "Foundation",
-    monthly: 79,
+    monthly: 59,
     build: 750,
     featured: false,
     tagline: "The site stays up, fast, and secure.",
     includes: "",
-    features: ["Hosting and SSL", "Daily backups", "Security updates", "Uptime monitoring"],
+    features: [
+      "Hosting and SSL",
+      "Daily backups",
+      "Security updates",
+      "Uptime monitoring",
+      "Your Google reviews on the site, kept current",
+    ],
     note: "Content changes are $40 each.",
     proof: "",
     cta: "Start with Foundation",
@@ -53,10 +59,11 @@ const PLANS = [
     tagline: "Get found, get calls, get booked.",
     includes: "Everything in Foundation, plus",
     features: [
+      "Lead text alerts: a tap on your site texts your phone",
+      "A call tracking number",
+      "Review requests: one tap texts your customer a link to review you on Google",
+      "Monthly performance report",
       "One content edit a month",
-      "Google Business Profile management",
-      "Your Google reviews on the site, kept current",
-      "Seasonal photo and service updates",
     ],
     note: "",
     proof: "",
@@ -72,13 +79,75 @@ const PLANS = [
     features: [
       "A landing page for every service",
       "Ongoing local SEO work",
-      "A call-tracking number",
       "Priority response",
     ],
     note: "",
     proof:
-      "Code 3 Property Solutions, above, is built this way: a page for every service and a Google Business Profile that stays current.",
+      "Code 3 Property Solutions, above, is built this way: a page for every service and a site that keeps earning calls.",
     cta: "Start with Market Leader",
+  },
+];
+
+/* Add-ons: a rate sheet, set as dot-leader ledgers. `per` marks a monthly rate. */
+const ADDONS = [
+  {
+    heading: "Monthly",
+    items: [
+      {
+        name: "Lead text alerts",
+        price: 15,
+        per: true,
+        note: "A tap or form fill on your site texts your phone within seconds. Included in Growth.",
+      },
+      {
+        name: "Call tracking number",
+        price: 15,
+        per: true,
+        note: "A number for your ads and truck that forwards to your cell and logs every call. Included in Growth.",
+      },
+      {
+        name: "Review requests",
+        price: 15,
+        per: true,
+        note: "One tap after a job texts your customer a link to leave a Google review. Included in Growth.",
+      },
+      {
+        name: "Monthly performance report",
+        price: 19,
+        per: true,
+        note: "Visits, calls, texts, and where they came from, emailed on the first of the month. Included in Growth.",
+      },
+    ],
+  },
+  {
+    heading: "One time",
+    items: [
+      { name: "Extra page or city landing page", price: 100, per: false, note: "" },
+      {
+        name: "Online estimate calculator",
+        price: 250,
+        per: false,
+        note: "Customers price their own job on your site, like the square-foot tool on cleanscenehouse.com.",
+      },
+      {
+        name: "Business email setup",
+        price: 75,
+        per: false,
+        note: "you@yourbusiness.com on Google Workspace. Google bills $7 a month for the mailbox.",
+      },
+      {
+        name: "Google Business Profile setup",
+        price: 150,
+        per: false,
+        note: "Services, hours, photos, and the questions customers ask, filled in properly once.",
+      },
+      {
+        name: "Content edit",
+        price: 40,
+        per: false,
+        note: "Free once a month on Growth and up.",
+      },
+    ],
   },
 ];
 
@@ -170,8 +239,9 @@ export default function Websites() {
             <p className="mt-4 max-w-2xl leading-relaxed text-ink-soft">
               Two costs, both flat and both fixed before the work starts: a one-time fee to
               build the site, and a monthly plan that keeps it online and working for you. Pay
-              a year up front on any plan and get two months free. The domain and everything on
-              the site are yours, and you can cancel the monthly at any time.
+              a year up front on any plan and get two months free. Add-ons stack onto any plan.
+              The domain and everything on the site are yours, and you can cancel the monthly at
+              any time.
             </p>
           </Reveal>
 
@@ -267,8 +337,52 @@ export default function Websites() {
             </div>
           </Reveal>
 
-          {/* Beyond the menu: quoted work */}
+          {/* Add-ons: a rate sheet in two dot-leader ledgers. The leader is an empty
+              flex item, so its bottom edge is its baseline and the dots sit on the
+              text baseline; `last baseline` keeps them on the final line if a name wraps. */}
           <Reveal delay={120}>
+            <div className="mt-16 lg:mt-20 lg:px-1">
+              <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">
+                Add to any plan
+              </h3>
+              <div className="mt-8 grid gap-x-16 gap-y-10 lg:grid-cols-2">
+                {ADDONS.map((group) => (
+                  <div key={group.heading}>
+                    <h4 className="font-serif text-xl tracking-tight text-ink">{group.heading}</h4>
+                    <ul className="mt-5 space-y-5">
+                      {group.items.map((a) => (
+                        <li key={a.name}>
+                          <div className="flex items-baseline gap-x-3 [align-items:last_baseline]">
+                            <span className="min-w-0 text-ink">{a.name}</span>
+                            <span
+                              aria-hidden="true"
+                              className="h-[3px] min-w-6 flex-1 bg-[radial-gradient(circle,rgb(var(--c-ink)/0.4)_1px,transparent_1.5px)] bg-[length:5px_3px] bg-bottom bg-repeat-x"
+                            />
+                            <span className="shrink-0 whitespace-nowrap font-serif text-xl leading-none tracking-tight text-navy">
+                              {usd(a.price)}
+                              {a.per && (
+                                <span className="ml-0.5 font-sans text-sm font-normal tracking-normal text-ink-faint">
+                                  /mo
+                                </span>
+                              )}
+                            </span>
+                          </div>
+                          {a.note && (
+                            <p className="mt-1.5 max-w-md text-sm leading-relaxed text-ink-soft">
+                              {a.note}
+                            </p>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Beyond the menu: quoted work */}
+          <Reveal delay={160}>
             <div className="mt-16 grid gap-5 md:grid-cols-[1fr_2fr] md:gap-12 lg:mt-20 lg:px-1">
               <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">Bigger operation?</h3>
               <div className="max-w-xl">

@@ -90,7 +90,7 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   visible), disabled under `prefers-reduced-motion`.
 - **Print**: `/resume` prints as a plain document (`@media print` in index.css,
   `print:` classes in Resume.tsx).
-- Design law: `~/.claude/CLAUDE.md` (anti-slop). Check new work against it.
+- Design law: invoke the `antislop` skill (~/.claude/skills/antislop) before any UI work and check new work against it.
 
 ## Content rules (owner's explicit choices)
 
