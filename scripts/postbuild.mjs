@@ -33,4 +33,17 @@ for (const route of routes) {
   }
 }
 writeFileSync(join(dist, "404.html"), render(routes[0]));
-console.log(`postbuild: wrote ${routes.length} route pages + 404.html`);
+
+// sitemap.xml + robots.txt for Search Console (added 2026-10-06), same URLs as the canonicals
+const today = new Date().toISOString().slice(0, 10);
+const urls = routes.map((r) => ORIGIN + (r.path === "/" ? "/" : r.path + "/"));
+const sitemap = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...urls.map((u) => `  <url><loc>${u}</loc><lastmod>${today}</lastmod></url>`),
+  "</urlset>",
+  "",
+].join("\n");
+writeFileSync(join(dist, "sitemap.xml"), sitemap);
+writeFileSync(join(dist, "robots.txt"), ["User-agent: *", "Allow: /", "", `Sitemap: ${ORIGIN}/sitemap.xml`, ""].join("\n"));
+console.log(`postbuild: wrote ${routes.length} route pages + 404.html + sitemap.xml + robots.txt`);
