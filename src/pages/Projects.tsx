@@ -117,6 +117,24 @@ export default function Projects() {
           </article>
         </Reveal>
 
+        {/* Senior design */}
+        <Reveal>
+          <div className="mt-28 [&_p]:max-w-2xl">
+            <SiteCard
+              src="/work/gr8-housing.jpg"
+              alt="Section Gr-8 Housing site: the house, solar array and shed drawn as an orange, blue and red point cloud"
+              name="Section Gr-8 Housing"
+              meta="gr8.josiahfalde.com"
+              href="https://gr8.josiahfalde.com/"
+            >
+              My senior design project, where I led eleven engineers through an off-grid house for a
+              family of five: under $260,000 and 12 kWh a day. The site turns our Revit models into a
+              102,400-point cloud that rebuilds itself into the structural, mechanical and power
+              designs, and lights up the parts each engineer designed.
+            </SiteCard>
+          </div>
+        </Reveal>
+
         {/* Apps */}
         <div className="mt-28 grid gap-x-8 gap-y-14 sm:grid-cols-2">
           <Reveal>
