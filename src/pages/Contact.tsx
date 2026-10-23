@@ -7,7 +7,6 @@ export default function Contact() {
       <PageHeader
         mark="pin"
         title="Get in touch"
-        lead="Whether it's medicine, engineering, or the places they overlap, I'd be glad to hear from you."
       />
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-20">

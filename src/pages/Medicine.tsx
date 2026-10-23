@@ -17,7 +17,6 @@ export default function Medicine() {
       <PageHeader
         mark="station"
         title="Hands-on medicine in resource-limited settings"
-        lead="Surgical first assist, medical translation, EMT certification, and clinical shadowing."
       />
 
       <div className="mx-auto max-w-content space-y-20 px-5 sm:px-8 sm:space-y-28">

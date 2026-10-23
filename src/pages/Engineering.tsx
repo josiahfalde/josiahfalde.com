@@ -17,7 +17,6 @@ export default function Engineering() {
       <PageHeader
         mark="structure"
         title="Trained to think in systems"
-        lead="A B.S. in Mechanical Engineering, and the projects that put it to work."
       />
 
       <div className="mx-auto max-w-content px-5 sm:px-8">
@@ -63,10 +62,6 @@ export default function Engineering() {
                   className="h-full"
                 />
               </div>
-              <p className="mt-3 text-sm text-ink-faint">
-                Section GR-8 with the first-place result, and the final presentation of the
-                off-grid home&rsquo;s budget allocations.
-              </p>
             </div>
           </article>
         </Reveal>

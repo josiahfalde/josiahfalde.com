@@ -37,7 +37,6 @@ const PLANS = [
     name: "Foundation",
     monthly: 79,
     featured: false,
-    tagline: "The site stays up, fast, and secure.",
     includes: "",
     features: [
       "Hosting and SSL",
@@ -54,7 +53,6 @@ const PLANS = [
     name: "Growth",
     monthly: 129,
     featured: true,
-    tagline: "Get found, get calls, get booked.",
     includes: "Everything in Foundation, plus",
     features: [
       "Lead text alerts: a tap on your site texts your phone",
@@ -264,10 +262,7 @@ export default function Websites() {
                   </p>
 
                   {/* Row 2: name */}
-                  <div>
-                    <h3 className="font-serif text-2xl tracking-tight text-ink">{t.name}</h3>
-                    <p className="mt-1 text-ink-soft">{t.tagline}</p>
-                  </div>
+                  <h3 className="font-serif text-2xl tracking-tight text-ink">{t.name}</h3>
 
                   {/* Row 3: price */}
                   <div className="mt-6">
@@ -338,9 +333,6 @@ export default function Websites() {
           <Reveal delay={120}>
             <div className="mt-16 lg:mt-20 lg:px-1">
               <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">Build</h3>
-              <p className="mt-3 max-w-xl leading-relaxed text-ink-soft">
-                One flat fee, fixed before the work starts. Pick the size that fits.
-              </p>
               <div className="mt-8 grid gap-y-8 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-0">
                 {BUILDS.map((b) => (
                   <div

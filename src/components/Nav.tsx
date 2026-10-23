@@ -91,7 +91,6 @@ export default function Nav() {
                 >
                   <Mark name={p.mark as MarkName} className="text-navy" />
                   <span className="font-serif text-lg">{p.name}</span>
-                  <span className="ml-auto hidden text-xs text-ink-faint min-[420px]:inline">{p.blurb}</span>
                 </NavLink>
               </li>
             ))}

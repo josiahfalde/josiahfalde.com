@@ -10,8 +10,7 @@ export default function Footer() {
         <div>
           <p className="font-serif text-xl tracking-tight text-navy">Josiah Falde</p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-ink-soft">
-            Mechanical engineer heading into medicine. Pensacola, Florida; Haiti;
-            the Dominican Republic.
+            Pensacola, Florida; Haiti; the Dominican Republic.
           </p>
         </div>
         <nav aria-label="Pages">

@@ -31,7 +31,6 @@ export default function Story() {
       <PageHeader
         mark="summit"
         title="From a rebuilt hospital to a calling"
-        lead="Why a mechanical engineer is heading to medical school, the short version."
       />
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <div className="grid gap-14 lg:grid-cols-[1.6fr_1fr] lg:gap-20">

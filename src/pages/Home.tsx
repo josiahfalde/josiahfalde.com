@@ -32,20 +32,16 @@ export default function Home() {
             <h1 className="font-serif text-6xl leading-[0.95] tracking-tight sm:text-7xl md:text-8xl">
               Josiah Falde
             </h1>
-            <p className="mt-6 max-w-lg text-xl leading-snug text-ink-soft sm:text-2xl">
-              Mechanical engineer heading into medicine.
-            </p>
-            <p className="mt-8 max-w-md font-serif text-lg italic leading-relaxed text-ink sm:text-xl">
+            <p className="mt-6 max-w-md font-serif text-lg italic leading-relaxed text-ink sm:text-xl">
               &ldquo;Engineering gave me the foundation; medicine gives it a purpose.&rdquo;
             </p>
           </div>
 
           <nav
             aria-label="Site index"
-            className="rounded-lg bg-raised/85 p-2 ring-1 ring-raised backdrop-blur-sm dark:ring-line"
+            className="w-full rounded-lg bg-raised/85 p-2 ring-1 ring-raised backdrop-blur-sm dark:ring-line lg:max-w-xs lg:justify-self-end"
           >
-            <p className="px-3 pb-1 pt-2 font-serif text-sm italic text-ink-faint">Index</p>
-            <ul>
+            <ul className="grid grid-cols-2 lg:grid-cols-1">
               {LEGEND.map((r) => (
                 <li key={r.path}>
                   <Link
@@ -56,7 +52,6 @@ export default function Home() {
                     <span className="font-serif text-lg leading-none tracking-tight text-ink transition-colors group-hover:text-navy">
                       {r.name}
                     </span>
-                    <span className="ml-auto hidden text-right text-sm text-ink-faint sm:inline">{r.blurb}</span>
                   </Link>
                 </li>
               ))}

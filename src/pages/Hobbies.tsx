@@ -19,7 +19,6 @@ export default function Hobbies() {
       <PageHeader
         mark="viewpoint"
         title="Off the clock"
-        lead="Three constants outside the work: photography, piano, and espresso."
       />
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
