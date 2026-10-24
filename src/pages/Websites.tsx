@@ -35,7 +35,6 @@ const WORK = [
 const PLANS = [
   {
     name: "Foundation",
-    monthly: 79,
     featured: false,
     includes: "",
     features: [
@@ -45,13 +44,12 @@ const PLANS = [
       "Uptime monitoring",
       "Your Google reviews on the site, kept current",
     ],
-    note: "Content changes are $40 each.",
+    note: "",
     proof: "",
     cta: "Start with Foundation",
   },
   {
     name: "Growth",
-    monthly: 129,
     featured: true,
     includes: "Everything in Foundation, plus",
     features: [
@@ -60,58 +58,49 @@ const PLANS = [
       "Monthly performance report",
       "One content edit a month",
     ],
-    note: "$168 a month bought separately.",
+    note: "",
     proof: "",
     cta: "Start with Growth",
   },
 ];
 
-/* Build sizes: one flat fee each, with a live example of the size. */
+/* Build sizes, each with a live example. Every build is quoted, never listed. */
 const BUILDS = [
   {
     name: "One page",
-    price: "$500",
     body: "Everything on one scrolling page: services, photos, reviews, pricing, and a way to reach you.",
     example: "Clean Scene",
     href: "https://cleanscenehouse.com/",
   },
   {
     name: "Full site",
-    price: "$1,200",
     body: "A page for every service and every city you work in, built to be found on Google.",
     example: "Code 3",
     href: "https://www.code3solution.com/",
   },
   {
     name: "Bigger operation",
-    price: "Quoted",
-    body: "Multiple locations, an established name, or specific goals in mind? I quote it on what it is worth to you, not on a checklist.",
+    body: "Multiple locations, an established name, or specific goals in mind? Built around what you need.",
     example: "",
     href: "#mockup",
   },
 ];
 
-/* Add-ons: a rate sheet, set as dot-leader ledgers. `per` marks a monthly rate. */
+/* Add-ons, grouped by how they bill. Priced in the quote, not listed. */
 const ADDONS = [
   {
     heading: "Monthly",
     items: [
       {
         name: "Lead text alerts",
-        price: 15,
-        per: true,
         note: "A tap or form fill on your site texts your phone within seconds. Included in Growth.",
       },
       {
         name: "Call tracking number",
-        price: 15,
-        per: true,
         note: "A number for your ads and truck that forwards to your cell and logs every call. Included in Growth.",
       },
       {
         name: "Monthly performance report",
-        price: 19,
-        per: true,
         note: "Visits, calls, texts, and where they came from, emailed on the first of the month. Included in Growth.",
       },
     ],
@@ -119,36 +108,26 @@ const ADDONS = [
   {
     heading: "One time",
     items: [
-      { name: "Extra page or city landing page", price: 100, per: false, note: "" },
+      { name: "Extra page or city landing page", note: "" },
       {
         name: "Online estimate calculator",
-        price: 150,
-        per: false,
         note: "Customers price their own job on your site, like the square-foot tool on cleanscenehouse.com.",
       },
       {
         name: "Business email setup",
-        price: 75,
-        per: false,
         note: "you@yourbusiness.com on Google Workspace. Google bills $7 a month for the mailbox.",
       },
       {
         name: "Google Business Profile setup",
-        price: 150,
-        per: false,
         note: "Services, hours, photos, and the questions customers ask, filled in properly once.",
       },
       {
         name: "Content edit",
-        price: 40,
-        per: false,
         note: "Free once a month on Growth and up.",
       },
     ],
   },
 ];
-
-const usd = (n: number) => "$" + n.toLocaleString("en-US");
 
 const STEPS = [
   {
@@ -159,12 +138,12 @@ const STEPS = [
   {
     n: "2",
     title: "Build",
-    body: "If you like it, I build and launch the full site for a one-time flat fee.",
+    body: "If you like it, I build and launch the full site for a one-time fee, quoted up front.",
   },
   {
     n: "3",
     title: "Hosting and maintenance",
-    body: "A flat monthly plan keeps the site online, secure, and working for you. Pay a year up front and get two months free.",
+    body: "A monthly plan keeps the site online, secure, and working for you. Pay a year up front and get two months free.",
   },
 ];
 
@@ -234,11 +213,12 @@ export default function Websites() {
           <Reveal>
             <h2 className="font-serif text-3xl tracking-tight">Pricing</h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-ink-soft">
-              Two costs, both flat and both fixed before the work starts: a one-time fee to
-              build the site, and a monthly plan that keeps it online and working for you. Pay
-              a year up front on any plan and get two months free. Add-ons stack onto any plan.
-              The domain and everything on the site are yours, and you can cancel the monthly at
-              any time.
+              Every quote is sized to the business: how many services and towns you cover, how
+              much the site has to do, and how much work it should bring in. A three-truck shop
+              and a one-man crew get different numbers, and both know theirs before any work
+              starts: one fee to build the site and one monthly plan. Pay a year up front and get
+              two months free. The domain and everything on the site are yours, and you can cancel
+              the monthly at any time.
             </p>
           </Reveal>
 
@@ -247,7 +227,7 @@ export default function Websites() {
               {PLANS.map((t) => (
                 <div
                   key={t.name}
-                  className={`grid grid-rows-[auto_auto_auto_1fr_auto_auto] gap-0 lg:row-span-6 lg:grid-rows-subgrid ${
+                  className={`grid grid-rows-[auto_auto_1fr_auto_auto] gap-0 lg:row-span-5 lg:grid-rows-subgrid ${
                     t.featured
                       ? "rounded-lg bg-raised px-6 py-8 ring-1 ring-ink/10 shadow-[0_6px_14px_-10px_rgb(var(--c-navy)/0.45)] sm:px-7 lg:-my-4 lg:py-12"
                       : "lg:px-1 lg:py-8"
@@ -264,21 +244,8 @@ export default function Websites() {
                   {/* Row 2: name */}
                   <h3 className="font-serif text-2xl tracking-tight text-ink">{t.name}</h3>
 
-                  {/* Row 3: price */}
+                  {/* Row 3: what you get */}
                   <div className="mt-6">
-                    <p className="font-serif text-5xl leading-none tracking-tight text-navy">
-                      {usd(t.monthly)}
-                      <span className="ml-1.5 font-sans text-base font-normal text-ink-faint">
-                        /mo
-                      </span>
-                    </p>
-                    <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                      or {usd(t.monthly * 10)} a year, two months free
-                    </p>
-                  </div>
-
-                  {/* Row 4: what you get */}
-                  <div className="mt-7">
                     {t.includes && <p className="text-sm font-medium text-ink">{t.includes}</p>}
                     <ul
                       className={`space-y-2 text-[0.95rem] leading-relaxed text-ink-soft ${
@@ -298,14 +265,14 @@ export default function Websites() {
                     {t.note && <p className="mt-3 text-sm text-ink-faint">{t.note}</p>}
                   </div>
 
-                  {/* Row 5: proof, where there is some */}
+                  {/* Row 4: proof, where there is some */}
                   <p
                     className={`mt-6 text-sm leading-relaxed text-ink-faint ${t.proof ? "" : "hidden lg:block"}`}
                   >
                     {t.proof}
                   </p>
 
-                  {/* Row 6: the one action, anchored to the bottom */}
+                  {/* Row 5: the one action, anchored to the bottom */}
                   <div className="mt-6 self-end">
                     {t.featured ? (
                       <a
@@ -328,8 +295,8 @@ export default function Websites() {
             </div>
           </Reveal>
 
-          {/* Build: one flat fee by size, each with a live example. Subgrid keeps the
-              name, price, body and link rows level across the three columns. */}
+          {/* Build: sizes, each with a live example. Subgrid keeps the name, body and
+              link rows level across the three columns. */}
           <Reveal delay={120}>
             <div className="mt-16 lg:mt-20 lg:px-1">
               <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">Build</h3>
@@ -337,16 +304,10 @@ export default function Websites() {
                 {BUILDS.map((b) => (
                   <div
                     key={b.name}
-                    className="grid grid-rows-[auto_auto_1fr_auto] lg:row-span-4 lg:grid-rows-subgrid"
+                    className="grid grid-rows-[auto_1fr_auto] lg:row-span-3 lg:grid-rows-subgrid"
                   >
                     <h4 className="font-serif text-xl tracking-tight text-ink">{b.name}</h4>
-                    <p className="mt-2 font-serif text-3xl leading-none tracking-tight text-navy">
-                      {b.price}
-                      {b.price !== "Quoted" && (
-                        <span className="ml-1.5 font-sans text-sm font-normal text-ink-faint">once</span>
-                      )}
-                    </p>
-                    <p className="mt-4 text-[0.95rem] leading-relaxed text-ink-soft">{b.body}</p>
+                    <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-soft">{b.body}</p>
                     <p className="mt-4">
                       {b.example ? (
                         <a
@@ -373,9 +334,7 @@ export default function Websites() {
             </div>
           </Reveal>
 
-          {/* Add-ons: a rate sheet in two dot-leader ledgers. The leader is an empty
-              flex item, so its bottom edge is its baseline and the dots sit on the
-              text baseline; `last baseline` keeps them on the final line if a name wraps. */}
+          {/* Add-ons: two short lists, monthly and one time. */}
           <Reveal delay={160}>
             <div className="mt-16 lg:mt-20 lg:px-1">
               <h3 className="font-serif text-2xl tracking-tight text-ink md:text-[1.7rem]">
@@ -388,21 +347,7 @@ export default function Websites() {
                     <ul className="mt-5 space-y-5">
                       {group.items.map((a) => (
                         <li key={a.name}>
-                          <div className="flex items-baseline gap-x-3 [align-items:last_baseline]">
-                            <span className="min-w-0 text-ink">{a.name}</span>
-                            <span
-                              aria-hidden="true"
-                              className="h-[3px] min-w-6 flex-1 bg-[radial-gradient(circle,rgb(var(--c-ink)/0.4)_1px,transparent_1.5px)] bg-[length:5px_3px] bg-bottom bg-repeat-x"
-                            />
-                            <span className="shrink-0 whitespace-nowrap font-serif text-xl leading-none tracking-tight text-navy">
-                              {usd(a.price)}
-                              {a.per && (
-                                <span className="ml-0.5 font-sans text-sm font-normal tracking-normal text-ink-faint">
-                                  /mo
-                                </span>
-                              )}
-                            </span>
-                          </div>
+                          <p className="text-ink">{a.name}</p>
                           {a.note && (
                             <p className="mt-1.5 max-w-md text-sm leading-relaxed text-ink-soft">
                               {a.note}
