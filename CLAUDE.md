@@ -82,7 +82,8 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   Use token classes only, never hex, so both themes stay correct.
 - **Type**: system serif stack (Iowan Old Style / Palatino / Georgia) for
   display, system sans for body, monospace only for genuine data (dates,
-  places, the map caption, schematic labels). No tracked-out uppercase labels.
+  places, the map caption). The ClinicSchematic labels are sans (redrawn
+  2026-10-26 as a star sketch). No tracked-out uppercase labels.
 - **Surfaces**: no hairline-bordered cards, no pill chips, no dividers as
   decoration. Structure comes from spacing, tonal `bg-raised` panels, and the
   screenshots themselves (`SiteCard`: crisp `ring-ink/10` edge + one tight
