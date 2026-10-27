@@ -43,10 +43,11 @@ src/
                        Nav, Footer, home Index legend, Seo, NotFound and postbuild all read it.
   data/contours.ts     generated contour paths (see Signature below); do not hand-edit
   index.css            design tokens (CSS vars), reveal motion, print styles
-  App.tsx              routes: / story medicine engineering projects websites hobbies places resume contact
-                       (/sites redirects to /projects; * = NotFound)
+  App.tsx              routes: / story medicine engineering projects hobbies places resume contact
+                       (/sites redirects to /projects; /websites -> josiahfaldeweb.com; * = NotFound)
   components/          Nav (desktop links from lg, Menu panel below), Footer, PageHeader, Mark (symbol set),
-                       Contour (the map), Globe (/places, lazy-loaded), PhotoSlot, SiteCard (+ Ext arrow),
+                       Contour (the map), Globe (/places, lazy-loaded), PhotoSlot, SiteCard (+ Ext arrow, optional drawn `visual`),
+                       ClinicSchematic (Parakaleo EMR figure, used on / and /projects),
                        Reveal, Seo, ThemeToggle
   pages/               one file per route; content lives inline
 ```
@@ -97,8 +98,8 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
 - Contact = `josiahfalde@proton.me` + LinkedIn + personal Instagram
   (`@josiahfalde`, added 2026-09-04) on personal pages. The music account
   `@josiahfalde_music` lives only in the piano section of /hobbies. Never
-  street address, GPA, GitHub links, or resume PDFs. The one exception: the
-  phone number `(443) 440-2717` appears on `/websites` for the web business.
+  street address, GPA, GitHub links, or resume PDFs. No phone number anywhere
+  on this site.
 - Status phrasing (updated 2026-09-10, MCAT already taken): "back in the
   classroom finishing prerequisite coursework and applying to osteopathic
   medical schools". Never call it a "gap year" (owner: it sounds idle; he is
@@ -117,12 +118,12 @@ a `<Route>` in `App.tsx`. Everything else picks it up.
   first Haiti trip 2017, translating in medical clinics since 2018, Dominican
   Republic work began 2021.
 - No em dashes anywhere in copy. Plain, factual, middle register.
-- `/websites`: only PUBLISHED work (a site on its own domain: customers and
-  friend builds alike). Prospect previews are never listed (owner, 2026-09-03).
-  Live now: Code 3, Clean Scene, Lydia Brianne Photo (added 2026-09-15).
-  Adding one: append to the WORK array in `src/pages/Websites.tsx` (meta =
-  "Live. Town, ST. domain") + a 1600x1000 jpg in `public/work/`. Screenshot
-  recipe (Playwright, headless): viewport 1600x788 so a 100vh hero's copy
-  clears the desktop 21:10 crop (top 762px), then `full_page` screenshot
-  clipped to 1600x1000; check the phone 16:9 crop (top 900px) does not shave
-  a heading. Render the card at 1280 and 400 wide before deploying.
+- **The web design business is NOT on this site** (split 2026-10-26, after
+  feedback that one site was speaking to admissions committees and to
+  home-service clients at once). It lives at https://josiahfaldeweb.com
+  (static site in `SmallBizSites/sites/josiah-falde-web-design`): portfolio,
+  plans, add-ons, phone. Here it gets one quiet outbound line each on /projects
+  and /contact plus the resume entry, nothing more. The home page stays on
+  medicine and engineering. `/websites` redirects there (postbuild writes a
+  meta-refresh page; a Cloudflare redirect rule 301s it). New live client
+  sites go on the business site's portfolio, not here.

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 
 export default function Contact() {
@@ -40,11 +39,11 @@ export default function Contact() {
           </div>
           <div className="space-y-4 leading-relaxed text-ink-soft">
             <p>
-              Small business owner looking for a website? Start on the{" "}
-              <Link to="/websites" className="font-medium text-navy hover:text-ink">
-                Websites
-              </Link>{" "}
-              page; the first design preview is free.
+              Small business owner looking for a website? That work lives at{" "}
+              <a href="https://josiahfaldeweb.com" className="font-medium text-navy hover:text-ink">
+                josiahfaldeweb.com
+              </a>
+              .
             </p>
             <p>
               Interested in the mobile clinics or the hospital in Haiti? That work runs through{" "}

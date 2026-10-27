@@ -34,6 +34,16 @@ for (const route of routes) {
 }
 writeFileSync(join(dist, "404.html"), render(routes[0]));
 
+// /websites moved to the business site (2026-10-26). Pages can't 301, so a
+// static page sends old links and sent cold emails on to josiahfaldeweb.com.
+const BUSINESS = "https://josiahfaldeweb.com/";
+mkdirSync(join(dist, "websites"), { recursive: true });
+writeFileSync(
+  join(dist, "websites", "index.html"),
+  `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Josiah Falde Web Design</title><link rel="canonical" href="${BUSINESS}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=${BUSINESS}"><script>location.replace("${BUSINESS}")</script></head><body><a href="${BUSINESS}">josiahfaldeweb.com</a></body></html>
+`,
+);
+
 // sitemap.xml + robots.txt for Search Console (added 2026-10-06), same URLs as the canonicals
 const today = new Date().toISOString().slice(0, 10);
 const urls = routes.map((r) => ORIGIN + (r.path === "/" ? "/" : r.path + "/"));

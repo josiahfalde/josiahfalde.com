@@ -22,8 +22,10 @@ export function Ext({ className = "" }: { className?: string }) {
 }
 
 interface SiteCardProps {
-  src: string;
-  alt: string;
+  src?: string;
+  alt?: string;
+  /** A drawn figure shown on a raised ground in place of a screenshot. */
+  visual?: ReactNode;
   name: string;
   /** Short line under the name: place, status, host. */
   meta?: string;
@@ -50,18 +52,23 @@ export default function SiteCard({
   href,
   contain = false,
   aspect = "aspect-[16/10]",
+  visual,
 }: SiteCardProps) {
   const external = /^https?:/.test(href);
   const frame = (
     <div
       className={`${aspect} overflow-hidden rounded-md bg-raised ring-1 ring-ink/10 shadow-[0_6px_14px_-10px_rgb(var(--c-navy)/0.45)] transition-shadow group-hover:shadow-[0_8px_18px_-10px_rgb(var(--c-navy)/0.6)]`}
     >
-      <img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        className={`h-full w-full ${contain ? "object-contain p-4" : "object-cover object-top"}`}
-      />
+      {visual ? (
+        <div className="flex h-full w-full items-center justify-center p-6 sm:p-8">{visual}</div>
+      ) : (
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className={`h-full w-full ${contain ? "object-contain p-4" : "object-cover object-top"}`}
+        />
+      )}
     </div>
   );
   const title = (

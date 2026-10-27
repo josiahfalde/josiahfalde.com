@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ROUTES from "../routes.json";
+import ClinicSchematic from "../components/ClinicSchematic";
 import Contour from "../components/Contour";
 import Mark, { type MarkName } from "../components/Mark";
 import PhotoSlot from "../components/PhotoSlot";
@@ -113,45 +114,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Currently building */}
-      <section aria-label="Current work" className="mx-auto mt-28 max-w-content px-5 sm:px-8">
+      {/* Built: the clinic software and the senior design house. */}
+      <section aria-label="Built" className="mx-auto mt-28 max-w-content px-5 sm:px-8">
         <Reveal>
           <h2 className="max-w-2xl font-serif text-3xl tracking-tight sm:text-4xl">
-            Three things I&rsquo;m building right now.
+            What I&rsquo;ve built.
           </h2>
         </Reveal>
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
+        <div className="mt-10 grid gap-x-8 gap-y-14 md:grid-cols-2">
           <Reveal>
             <SiteCard
-              src="/work/flywheel.jpg"
-              alt="Flywheel dashboard: realized premium, win rate, and cumulative premium chart"
-              name="Flywheel"
-              meta="Options analytics, live"
+              visual={<ClinicSchematic />}
+              name="Parakaleo EMR"
+              meta="In use in our mobile clinics"
               href="/projects"
             >
-              Tracks a Wheel-strategy options portfolio: premium, wheels, benchmarks.
+              Offline charting on iPads and a Raspberry Pi, so clinic patients in Haiti and the
+              Dominican Republic keep a lasting medical record.
             </SiteCard>
           </Reveal>
           <Reveal delay={80}>
             <SiteCard
-              src="/work/code3.jpg"
-              alt="Homepage of Code 3 Property Solutions, Mobile, Alabama"
-              name="Websites for small businesses"
-              meta="Code 3 Property Solutions, Mobile, AL"
-              href="/websites"
+              src="/work/gr8-housing.jpg"
+              alt="Section Gr-8 Housing site: the house, solar array and shed drawn as an orange, blue and red point cloud"
+              name="Section Gr-8 Housing"
+              meta="Senior design, first place"
+              href="https://gr8.josiahfalde.com/"
             >
-              Design and hosting for home-service companies. Free preview first.
-            </SiteCard>
-          </Reveal>
-          <Reveal delay={160}>
-            <SiteCard
-              src="/work/farescout.jpg"
-              alt="FareScout: Europe and Asia flight fares priced in Chase points"
-              name="FareScout"
-              meta="Flight-deal scanner, live"
-              href="/projects"
-            >
-              Every route, every day, priced in cash and transfer-partner points.
+              I led eleven engineers through an off-grid house for a family of five: under
+              $260,000 and 12 kWh a day.
             </SiteCard>
           </Reveal>
         </div>
