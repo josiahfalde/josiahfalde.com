@@ -126,8 +126,8 @@ export default function Home() {
             <SiteCard
               visual={<ClinicSchematic />}
               name="Parakaleo EMR"
-              meta="In use in our mobile clinics"
-              href="/projects"
+              meta="Live demo"
+              href="https://parakaleoemr.josiahfalde.com/"
             >
               Offline charting on iPads and a Raspberry Pi, so clinic patients in Haiti and the
               Dominican Republic keep a lasting medical record.

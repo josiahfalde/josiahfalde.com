@@ -34,8 +34,18 @@ export default function Projects() {
                 <a href="https://parakaleo.com" className="font-medium text-navy hover:text-ink">
                   Parakaleo International
                 </a>
-                , my family&rsquo;s missions organization behind the clinics. It runs on the
-                clinic network only, not the public internet.
+                , my family&rsquo;s missions organization behind the clinics. The real system runs
+                on the clinic network only, never the public internet.
+              </p>
+              <p className="mt-5">
+                <a
+                  href="https://parakaleoemr.josiahfalde.com/"
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center rounded-md bg-navy px-5 py-2.5 text-sm font-medium text-paper transition-colors hover:bg-ink"
+                >
+                  Try the demo
+                </a>
               </p>
             </div>
             <div className="flex items-center rounded-lg bg-raised p-6 sm:p-8">
