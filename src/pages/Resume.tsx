@@ -79,7 +79,7 @@ const PROJECTS: Entry[] = [
   {
     when: "Ongoing",
     title: "Website design and hosting",
-    body: "Design, build, and host websites for small home-service businesses at josiahfaldeweb.com.",
+    body: "Design, build, and host websites for local businesses at josiahfaldeweb.com.",
   },
 ];
 

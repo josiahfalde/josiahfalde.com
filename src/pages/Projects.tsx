@@ -64,7 +64,7 @@ export default function Projects() {
               meta="gr8.josiahfalde.com"
               href="https://gr8.josiahfalde.com/"
             >
-              My senior design project, where I led eleven engineers through an off-grid house for a
+              My senior design project, where I led ten other engineers through an off-grid house for a
               family of five: under $260,000 and 12 kWh a day. The site turns our Revit models into a
               102,400-point cloud that rebuilds itself into the structural, mechanical and power
               designs, and lights up the parts each engineer designed.

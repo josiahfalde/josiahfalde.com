@@ -50,7 +50,7 @@ export default function Engineering() {
               <div className="grid grid-cols-[5fr_3fr] gap-3 sm:gap-4">
                 <PhotoSlot
                   src="/photos/capstone-team.jpg"
-                  alt="The eight-person capstone team, Section GR-8, in suits holding first-place certificates"
+                  alt="Eight of the eleven Section GR-8 capstone engineers in suits, holding first-place certificates"
                   label="Section GR-8"
                   className="aspect-[4/3]"
                 />

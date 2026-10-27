@@ -141,7 +141,7 @@ export default function Home() {
               meta="Senior design, first place"
               href="https://gr8.josiahfalde.com/"
             >
-              I led eleven engineers through an off-grid house for a family of five: under
+              I led ten other engineers through an off-grid house for a family of five: under
               $260,000 and 12 kWh a day.
             </SiteCard>
           </Reveal>
