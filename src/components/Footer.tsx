@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ROUTES from "../routes.json";
 
-const PAGES = ROUTES.filter((r) => r.path !== "/");
+const PAGES = ROUTES.filter((r) => r.path !== "/" && !r.unlisted);
 
 export default function Footer() {
   return (

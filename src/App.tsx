@@ -12,6 +12,7 @@ import Hobbies from "./pages/Hobbies";
 import Places from "./pages/Places";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
 
 function ToBusinessSite() {
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="/places" element={<Places />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/support" element={<Support />} />
           {/* The old /sites directory now lives on Projects. */}
           <Route path="/sites" element={<Navigate to="/projects" replace />} />
           {/* The web design business moved to its own site (2026-10-26). */}

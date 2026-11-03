@@ -10,7 +10,7 @@ export default function NotFound() {
         There is no page at this address.
       </p>
       <ul className="mt-10 grid gap-2 sm:grid-cols-2">
-        {ROUTES.map((r) => (
+        {ROUTES.filter((r) => !r.unlisted).map((r) => (
           <li key={r.path}>
             <Link to={r.path} className="group flex items-center gap-3 py-1.5">
               <Mark name={r.mark as MarkName} className="text-navy" />
