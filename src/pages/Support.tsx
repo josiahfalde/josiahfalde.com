@@ -16,28 +16,26 @@ export default function Support() {
         />
         <div className="md:pb-2">
           <h1 className="font-serif text-4xl leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
-            Help me get through med school
+            Buy me a coffee
           </h1>
           <div className="mt-8 max-w-xl space-y-4 text-lg leading-relaxed text-ink-soft">
             <p>
-              I&rsquo;m Josiah. I finished my mechanical engineering degree in May, and this year
-              I&rsquo;m back in the classroom finishing prerequisite coursework and applying to
-              osteopathic medical schools.
-            </p>
-            <p>
-              I also build{" "}
+              I&rsquo;m Josiah. I build{" "}
               <a href="https://referdpc.com" className="font-medium text-navy hover:text-ink">
                 ReferDPC
-              </a>
-              . If it has saved you time and you&rsquo;d like to help with the cost of school,
-              I&rsquo;d be really glad. Any amount helps.
+              </a>{" "}
+              while finishing prerequisites and applying to osteopathic medical schools.
+            </p>
+            <p>
+              If it has saved you some time, you&rsquo;re welcome to buy me a coffee. I&rsquo;m
+              taking organic chemistry, so it will get used.
             </p>
           </div>
           <a
             href={KOFI}
             className="mt-9 inline-flex items-center gap-2.5 rounded-md bg-navy px-6 py-3 text-base font-medium text-paper transition-colors hover:bg-ink"
           >
-            Send a gift on Ko-fi
+            Buy me a coffee on Ko-fi
             <Ext />
           </a>
           <p className="mt-8 max-w-md text-sm leading-relaxed text-ink-faint">
