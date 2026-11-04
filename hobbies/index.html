@@ -39,6 +39,7 @@
         else if (h.indexOf("tel:") === 0) ev = "call_click";
         else if (h.indexOf("linkedin.com") !== -1) ev = "linkedin_click";
         else if (h.indexOf("instagram.com") !== -1) ev = "instagram_click";
+        else if (h.indexOf("ko-fi.com") !== -1) ev = "support_click";
         if (!ev) return;
         gtag("event", ev, {
           link_text: (a.textContent || "").replace(/\s+/g, " ").trim().slice(0, 60),
@@ -67,8 +68,8 @@
         } catch (e) {}
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-CuWZj6Bh.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-goIuw6BD.css">
+    <script type="module" crossorigin src="/assets/index-B0VVbrTz.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CjWIOClt.css">
   </head>
   <body>
     <div id="root"></div>
