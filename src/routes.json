@@ -64,15 +64,6 @@
     "blurb": "Education, experience, certifications"
   },
   {
-    "path": "/support",
-    "name": "Support",
-    "mark": "flag",
-    "title": "Buy me a coffee | Josiah Falde",
-    "description": "Josiah Falde builds ReferDPC and is applying to osteopathic medical schools. If it has saved you some time, you can buy him a coffee.",
-    "blurb": "",
-    "unlisted": true
-  },
-  {
     "path": "/contact",
     "name": "Contact",
     "mark": "pin",

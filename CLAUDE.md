@@ -52,11 +52,6 @@ src/
   pages/               one file per route; content lives inline
 ```
 
-`/support` (Nov 3 2026) is deliberately `"unlisted": true`: reachable by link from
-ReferDPC, but not in the nav, footer, home legend or sitemap, and noindex. This site
-speaks to admissions committees, so the ask stays out of their path. Gifts must never
-touch ReferDPC listings, order or Pro.
-
 Adding a page: add an entry to `src/routes.json`, a file in `src/pages/`, and
 a `<Route>` in `App.tsx`. Everything else picks it up.
 
