@@ -19,8 +19,7 @@ function render(route) {
     .replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${url}$2`)
     .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${url}$2`)
     .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(route.title)}$2`)
-    .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${esc(route.description)}$2`)
-    .replace("</head>", route.unlisted ? '<meta name="robots" content="noindex"></head>' : "</head>");
+    .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${esc(route.description)}$2`);
 }
 
 for (const route of routes) {
@@ -47,7 +46,7 @@ writeFileSync(
 
 // sitemap.xml + robots.txt for Search Console (added 2026-10-06), same URLs as the canonicals
 const today = new Date().toISOString().slice(0, 10);
-const urls = routes.filter((r) => !r.unlisted).map((r) => ORIGIN + (r.path === "/" ? "/" : r.path + "/"));
+const urls = routes.map((r) => ORIGIN + (r.path === "/" ? "/" : r.path + "/"));
 const sitemap = [
   '<?xml version="1.0" encoding="UTF-8"?>',
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',

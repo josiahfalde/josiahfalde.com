@@ -7,7 +7,7 @@ import PhotoSlot from "../components/PhotoSlot";
 import Reveal from "../components/Reveal";
 import SiteCard from "../components/SiteCard";
 
-const LEGEND = ROUTES.filter((r) => r.path !== "/" && r.path !== "/contact" && !r.unlisted);
+const LEGEND = ROUTES.filter((r) => r.path !== "/" && r.path !== "/contact");
 
 const STATS = [
   { value: "40+", label: "surgeries as first assist" },

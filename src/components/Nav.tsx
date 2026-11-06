@@ -4,7 +4,7 @@ import ROUTES from "../routes.json";
 import Mark, { type MarkName } from "./Mark";
 import ThemeToggle from "./ThemeToggle";
 
-const PAGES = ROUTES.filter((r) => r.path !== "/" && !r.unlisted);
+const PAGES = ROUTES.filter((r) => r.path !== "/");
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
